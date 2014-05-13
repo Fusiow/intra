@@ -30,7 +30,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('icomoon');
+		echo $this->Html->css('main');
+		echo $this->Html->css('home');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -38,28 +40,22 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	?>
 </head>
 <body>
-	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
-		</div>
-		<div id="content">
-
-			<?php echo $this->Session->flash(); ?>
-
-			<?php echo $this->fetch('content'); ?>
-		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
-				);
-			?>
-			<p>
-				<?php echo $cakeVersion; ?>
-			</p>
-		</div>
-	</div>
-	<?php echo $this->element('sql_dump'); ?>
+	<header>
+		<!-- Menu -->
+			<div id='menu'>
+				<ul>
+					<li id='first'><a href="#"><i id='iconmenu' class='icon-home'></i></a></li>
+					<li><a href="#"><i class='icon-user3'></i>Profil</a></li>
+					<li><a href="#"><i class='icon-tree'></i>Modules</a></li>
+					<li><a href="#"><i class='icon-bubbles2'></i>Forum</a></li>
+					<li><a href="#"><i class='icon-calendar'></i>Planning</a></li>
+					<li id='last'><a href="#"><i id='iconmenu' class='icon-cog'></i></a></li>
+					<li class='stretch'></li>
+</ul>
+			</div>
+	</header>
+<div id='content'>
+	<?= $this->fetch('content') ?>
+</div>
 </body>
 </html>

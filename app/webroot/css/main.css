@@ -1,0 +1,95 @@
+/*
+ * Main css for Intra
+ * Ne02ptzero's Code
+*/
+
+/* Font's Declaration */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+
+@font-face {
+	font-family: 'Title';
+	src: url('fonts/BebasNeue.otf');
+}
+
+/* General Declaration */
+
+* {
+	box-sizing: border-box;
+	outline: none;
+	margin: 0;
+}
+
+html, body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+}
+
+html {
+	background-color: #E5E1D1;
+	color:  #52616D;
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+}
+
+/* Menu */
+
+#menu {
+	background-color: #2C343B;
+	font-family: 'Title';
+	border-bottom: 3px #52616D solid;
+}
+
+#menu ul {
+	padding-top: 4px;
+	height: 42px;
+	text-align: justify;
+}
+
+#menu ul li {
+	display: inline;
+}
+
+#menu ul #last {
+	padding-right: 1%;
+}
+
+#menu ul .stretch {
+	display: inline-block;
+	width: 100%;
+}
+
+#menu ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 2em;
+	padding-top: 4px;
+	padding-left: 2%;
+	padding-right: 2%;
+	transition-duration: 0.3s;
+	transition-property: background-color, color;
+}
+
+#menu ul li a:hover {
+	background-color: #52616D;
+	color: #E5E1D1;
+}
+
+#menu ul li a i {
+	padding-right: 4px;
+}
+
+#menu ul li a #iconmenu {
+	padding-right: 0;
+}
+
+/* Content */
+
+#content {
+	background-color: rgba(255, 255, 255, 0.76);
+	height: 96%;
+	width: 100%;
+	padding: 2%;
+}
