@@ -8,7 +8,7 @@
 ## Index
 #### Overview sur le Planning
   - [ ] Projets en cours
-  - [ ] Couleur en fonction de l'inscription
+  - [x] Couleur en fonction de l'inscription
 
 ###### PopUp onClick
   - [ ] S'inscrire si pas inscrit / Inversement

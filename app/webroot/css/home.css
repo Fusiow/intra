@@ -1,8 +1,7 @@
 #planning {
-	margin-right: 5%;
-	margin-left: 5%;
 	width: 90%;
 	height: 180px;
+	text-align: center;
 }
 
 #planning table {
@@ -15,6 +14,38 @@
 	width: 100%;
 }
 
+#planning table td {
+	font-size: 2em;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.82);
+	transition-property: border, font-size, color;
+	transition-duration: 0.2s;
+}
+
+#planning table td:hover {
+	border: 2px solid rgba(255, 255, 255, 0.44);
+	font-size: 2.6em;
+	color: white;
+}
+
 #planning .project {
-	background-color: green;
+	background-color: rgba(23, 142, 112, 0.83);
+}
+
+#planning .noinscription {
+	background-color: rgba(255, 0, 0, 0.74);
+}
+
+#planning .nope {
+	background-color: #D6C695;
+}
+
+#planning .today {
+	color: rgba(0, 0, 0, 0.74) !important
+}
+
+/* Correction panel */
+
+#corrections {
+	margin-top: 5%;
 }

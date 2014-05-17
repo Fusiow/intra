@@ -1,26 +1,45 @@
-<h1>Titre</h1>
 <div id="planning">
 	<table>
 		<tr>
-			<td class='project'>Lundi</td>
-			<td class='project'>Mardi</td>
-			<td class='project'>Mercredi</td>
-			<td class='project'>Jeudi</td>
-			<td class='nope'>Vendredi</td>
-			<td class='nope'>Samedi</td>
-			<td class='nope'>Dimanche</td>
+			<th>Lundi</th>
+			<th>Mardi</th>
+			<th>Mercredi</th>
+			<th>Jeudi</th>
+			<th>Vendredi</th>
+			<th>Samedi</th>
+			<th>Dimanche</th>
 		</tr>
 		<tr>
-			<td class='nope'>Lundi</td>
-			<td class='nope'>Mardi</td>
-			<td class='noinscription'>Mercredi</td>
-			<td class='noinscription'>Jeudi</td>
-			<td class='noinscription'>Vendredi</td>
-			<td class='project'>Samedi</td>
-			<td class='project'>Dimanche</td>
+			<td class='project'>1</td>
+			<td class='project'>2</td>
+			<td class='project'>3</td>
+			<td class='project today'>4</td>
+			<td class='nope'>5</td>
+			<td class='nope'>6</td>
+			<td class='nope'>7</td>
+		</tr>
+		<tr>
+			<td class='nope'>8</td>
+			<td class='nope'>9</td>
+			<td class='noinscription'>10</td>
+			<td class='noinscription'>11</td>
+			<td class='noinscription'>12</td>
+			<td class='project'>13</td>
+			<td class='project'>14</td>
 		</tr>
 
 	</table>
 </div>
-<div id="corrections"></div>
+<div id="corrections" class='panel'>
+	<span class='title'>Corrections</span><br />
+	<br />
+	<span class='sub-title'>Projet Intra</span><br />
+	<span class='element'>Valentin est <span class='green-style'>connecte</span></span><br />
+	<span class='element'>Ryad est <span class='green-style'>connecte</span></span><br />
+	<span class='element'>Matthieu est <span class='green-style'>connecte</span></span><br />
+	<span class='element'>Vincent est <span class='red-style'>deconnecte</span></span><br />
+	<span class='element'>Louis est <span class='red-style'>au dessus</span></span><br />
+
+</div>
 <div id="news"></div>
+

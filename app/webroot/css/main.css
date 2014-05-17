@@ -34,6 +34,14 @@ html {
 	width: 100%;
 }
 
+.green-style {
+	color: green;
+}
+
+.red-style {
+	color: red;
+}
+
 /* Menu */
 
 #menu {
@@ -91,5 +99,33 @@ html {
 	background-color: rgba(255, 255, 255, 0.76);
 	height: 96%;
 	width: 100%;
-	padding: 2%;
+	padding-top: 2%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+/* Panel Style */
+
+.panel {
+	background-color: #E5E1D1;
+	min-height: 45%;
+	width: 25%;
+}
+
+.panel .title {
+	font-size: 2em;
+	border-bottom: 3px solid #F8F7F2;
+	padding-right: 20%;
+}
+
+.panel .sub-title {
+	font-size: 1.5em;
+	margin-left: 5%;
+	margin-top: 3%;
+}
+
+.panel .element {
+	margin-left: 9%;
+	border-left: 2px solid #F8F7F2;
+	padding-left: 3%;
 }
