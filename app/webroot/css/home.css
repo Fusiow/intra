@@ -1,3 +1,11 @@
+/*
+ * Planning Style
+ * td = each case
+ * class .project = Inscrit
+ * class .noinscription = ...
+ * class .nope = Aucun projet
+ */ 
+
 #planning {
 	width: 90%;
 	height: 180px;
@@ -18,13 +26,13 @@
 	font-size: 2em;
 	font-weight: bold;
 	color: rgba(255, 255, 255, 0.82);
-	transition-property: border, font-size, color;
+	transition-property: box-shadow, font-size, color, border-left;
 	transition-duration: 0.2s;
 }
 
 #planning table td:hover {
-	border: 2px solid rgba(255, 255, 255, 0.44);
 	font-size: 2.6em;
+	box-shadow: 10px 10px 5px black;
 	color: white;
 }
 
