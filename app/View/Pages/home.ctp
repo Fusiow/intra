@@ -1,3 +1,6 @@
+<p>This is the main content. To display a lightbox click <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">POPUP</a></p>
+<div id="light" class="white_content">This is the lightbox content. <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><i class='icon-close close'></i></a></div>
+    <div id="fade" class="black_overlay"></div>
 <div id="planning">
 	<table>
 		<tr>
