@@ -55,5 +55,24 @@
 /* Correction panel */
 
 #corrections {
-	margin-top: 5%;
+	float: left;
+}
+
+#news {
+	margin-left: 30%;
+	max-height: 45%;
+	width: 50%;
+}
+
+#news .newglob {
+}
+
+#news .newglob .member {
+	font-weight: bold;
+}
+
+#news .newglob .action {
+	padding-left: 5%;
+	padding-right: 5%;
+	border-bottom: 3px solid white;
 }

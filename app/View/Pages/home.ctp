@@ -30,16 +30,41 @@
 
 	</table>
 </div>
-<div id="corrections" class='panel'>
-	<span class='title'>Corrections</span><br />
-	<br />
-	<span class='sub-title'>Projet Intra</span><br />
-	<span class='element'>Valentin est <span class='green-style'>connecte</span></span><br />
-	<span class='element'>Ryad est <span class='green-style'>connecte</span></span><br />
-	<span class='element'>Matthieu est <span class='green-style'>connecte</span></span><br />
-	<span class='element'>Vincent est <span class='red-style'>deconnecte</span></span><br />
-	<span class='element'>Louis est <span class='red-style'>au dessus</span></span><br />
+	<div class='parent'>
+	<div id="corrections" class='panel'>
+		<span class='title'>Corrections</span><br />
+		<br />
+		<span class='sub-title'>Projet Intra <a href="#"><i class='icon-link'></i></a></span><br />
+		<span class='element'>Valentin est <span class='green-style'>connecte</span></span><br />
+		<span class='element'>Ryad est <span class='green-style'>connecte</span></span><br />
+		<span class='element'>Matthieu est <span class='green-style'>connecte</span></span><br />
+		<span class='element'>Vincent est <span class='red-style'>deconnecte</span></span><br />
+		<span class='element'>Louis est <span class='red-style'>au dessus</span></span><br />
 
-</div>
-<div id="news"></div>
+	</div>
 
+	<!--
+		News template:
+			<span class='newglob'>
+				<span class='member'>/* Lien vers le profil du membre */</span>
+				<br /> // Retour a la ligne /!\
+				<span class='action'>/* Evenement / Action du membre */</span>
+				<br /> // Retour a la ligne /!\
+			</span>
+	-->
+	<div id="news" class='panel'>
+		<span class='newglob'>
+			<span class='member'><a href="#">Ryad Kharif</a></span>
+			<br />
+			<span class='action'>A encore eu un 0 en Unix</span>
+			<br />
+		</span>
+		<span class='newglob'>
+			<span class='member'><a href="#">Matthieu Maudet</a></span>
+			<br />
+			<span class='action'>N'arrive pas a envoyer des binaires via ft_p</span>
+			<br />
+		</span>
+
+	</div>
+	</div>

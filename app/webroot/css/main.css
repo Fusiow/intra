@@ -1,7 +1,7 @@
 /*
  * Main css for Intra
  * Ne02ptzero's Code
-*/
+ */
 
 /* Font's Declaration */
 
@@ -9,38 +9,51 @@
 
 @font-face {
 	font-family: 'Title';
-	src: url('fonts/BebasNeue.otf');
+src: url('fonts/BebasNeue.otf');
 }
 
 /* General Declaration */
 
 * {
 	box-sizing: border-box;
-	outline: none;
-	margin: 0;
+outline: none;
+margin: 0;
 }
 
 html, body {
-	margin: 0;
-	height: 100%;
-	width: 100%;
-	padding: 0;
+margin: 0;
+height: 100%;
+width: 100%;
+padding: 0;
 }
 
 html {
 	background-color: #E5E1D1;
-	color:  #52616D;
-	font-family: 'Roboto', sans-serif;
-	width: 100%;
+color:  #52616D;
+		font-family: 'Roboto', sans-serif;
+width: 100%;
 }
 
 .green-style {
-	color: green;
+color: green;
 }
 
 .red-style {
-	color: red;
+color: red;
 }
+
+/* Link Style */
+
+a {
+	text-decoration: none;
+color: #52616D;
+	   transition-property: color;
+	   transition-duration: 0.3s;
+}
+
+a:hover {
+color: red;
+  }
 
 /* Menu */
 
@@ -52,12 +65,12 @@ html {
 
 #menu ul {
 	padding-top: 4px;
-	height: 42px;
-	text-align: justify;
+height: 42px;
+		text-align: justify;
 }
 
 #menu ul li {
-	display: inline;
+display: inline;
 }
 
 #menu ul #last {
@@ -65,24 +78,24 @@ html {
 }
 
 #menu ul .stretch {
-	display: inline-block;
-	width: 100%;
+display: inline-block;
+width: 100%;
 }
 
 #menu ul li a {
-	color: #FFFFFF;
-	text-decoration: none;
-	font-size: 2em;
-	padding-top: 4px;
-	padding-left: 2%;
-	padding-right: 2%;
-	transition-duration: 0.3s;
-	transition-property: background-color, color;
+color: #FFFFFF;
+	   text-decoration: none;
+	   font-size: 2em;
+	   padding-top: 4px;
+	   padding-left: 2%;
+	   padding-right: 2%;
+	   transition-duration: 0.3s;
+	   transition-property: background-color, color;
 }
 
 #menu ul li a:hover {
 	background-color: #52616D;
-	color: #E5E1D1;
+color: #E5E1D1;
 }
 
 #menu ul li a i {
@@ -97,19 +110,24 @@ html {
 
 #content {
 	background-color: rgba(255, 255, 255, 0.76);
-	height: 96%;
-	width: 100%;
-	padding-top: 2%;
-	padding-left: 5%;
-	padding-right: 5%;
+height: 96%;
+width: 100%;
+	   padding-top: 2%;
+	   padding-left: 5%;
+	   padding-right: 5%;
 }
 
 /* Panel Style */
 
-.panel {
+.parent {
+	margin-top: 5%;
+}
+
+.parent .panel {
 	background-color: #E5E1D1;
 	min-height: 45%;
 	width: 25%;
+	padding: 1%;
 }
 
 .panel .title {
