@@ -3,6 +3,7 @@
 ## Design
   - [x] Menu
   - [ ] Responsive
+  - [x] Panel
 
 
 ## Index
