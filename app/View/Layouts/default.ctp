@@ -16,7 +16,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
+$cakeDescription = __d('dev', 'Intra 42');
 $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 ?>
 <!DOCTYPE html>
@@ -24,22 +24,25 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo $cakeDescription ?>:
+		<?php echo $cakeDescription ?>
 		<?php echo $title_for_layout; ?>
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
 
 		echo $this->Html->css('icomoon');
-		echo $this->Html->css('main');
 		echo $this->Html->css('home');
-
+		if ($title_for_layout == "Login")
+			echo $this->Html->css('login');
+		else
+			echo $this->Html->css('main');
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
 </head>
 <body>
+	<?php if ($title_for_layout != "Login") { ?>
 	<header>
 		<!-- Menu -->
 			<div id='menu'>
@@ -54,6 +57,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 </ul>
 			</div>
 	</header>
+	<?php } ?>
 <div id='content'>
 	<?= $this->fetch('content') ?>
 </div>

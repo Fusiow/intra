@@ -1,0 +1,186 @@
+2014-05-27 17:09:41 Error: Fatal Error (1): Call to a member function init() on a non-object in [/var/www/intra/lib/Cake/Controller/Controller.php, line 643]
+2014-05-27 17:09:41 Error: [FatalErrorException] Call to a member function init() on a non-object
+Request URL: /intra/users/login
+Stack Trace:
+#0 /var/www/intra/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/intra/...', 643)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/intra/...', 643, Array)
+#2 /var/www/intra/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/intra/...', 643, Array)
+#3 /var/www/intra/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-27 17:14:07 Error: Fatal Error (1): Call to undefined method View::input() in [/var/www/intra/app/View/Users/login.ctp, line 4]
+2014-05-27 17:14:07 Error: [FatalErrorException] Call to undefined method View::input()
+Request URL: /intra/users/login
+Stack Trace:
+#0 /var/www/intra/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/intra/...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/intra/...', 4, Array)
+#2 /var/www/intra/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/intra/...', 4, Array)
+#3 /var/www/intra/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-27 17:49:05 Error: Fatal Error (4): syntax error, unexpected '<' in [/var/www/intra/app/View/Users/login.ctp, line 3]
+2014-05-27 17:49:05 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /intra/users/login
+Stack Trace:
+#0 /var/www/intra/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/intra/...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/intra/...', 3, Array)
+#2 /var/www/intra/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/intra/...', 3, Array)
+#3 /var/www/intra/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-27 18:03:52 Error: Fatal Error (1): Call to undefined method UsersController::request() in [/var/www/intra/app/Controller/UsersController.php, line 11]
+2014-05-27 18:03:52 Error: [FatalErrorException] Call to undefined method UsersController::request()
+Request URL: /intra/users/login
+Stack Trace:
+#0 /var/www/intra/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/intra/...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/intra/...', 11, Array)
+#2 /var/www/intra/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/intra/...', 11, Array)
+#3 /var/www/intra/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-27 20:14:30 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /intra/users/login
+Stack Trace:
+#0 /var/www/intra/lib/Cake/Core/App.php(365): CakePlugin::path('DebugKit')
+#1 /var/www/intra/lib/Cake/Core/App.php(226): App::pluginPath('DebugKit')
+#2 /var/www/intra/lib/Cake/Core/App.php(547): App::path('Controller/Comp...', 'DebugKit')
+#3 [internal function]: App::load('ToolbarComponen...')
+#4 [internal function]: spl_autoload_call('ToolbarComponen...')
+#5 /var/www/intra/lib/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#6 /var/www/intra/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#7 /var/www/intra/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#8 /var/www/intra/lib/Cake/Routing/Dispatcher.php(186): Controller->constructClasses()
+#9 /var/www/intra/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/intra/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-27 20:17:09 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/intra/app/Controller/AppController.php, line 49]
+2014-05-27 20:17:09 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /intra/users/login
+Stack Trace:
+#0 /var/www/intra/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/intra/...', 49)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/intra/...', 49, Array)
+#2 /var/www/intra/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/intra/...', 49, Array)
+#3 /var/www/intra/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-27 20:17:38 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /intra/users/login
+Stack Trace:
+#0 /var/www/intra/lib/Cake/Core/App.php(365): CakePlugin::path('DebugKit')
+#1 /var/www/intra/lib/Cake/Core/App.php(226): App::pluginPath('DebugKit')
+#2 /var/www/intra/lib/Cake/Core/App.php(547): App::path('Controller/Comp...', 'DebugKit')
+#3 [internal function]: App::load('ToolbarComponen...')
+#4 [internal function]: spl_autoload_call('ToolbarComponen...')
+#5 /var/www/intra/lib/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#6 /var/www/intra/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#7 /var/www/intra/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#8 /var/www/intra/lib/Cake/Routing/Dispatcher.php(186): Controller->constructClasses()
+#9 /var/www/intra/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/intra/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-27 20:18:21 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /intra/users/login
+Stack Trace:
+#0 /var/www/intra/lib/Cake/Core/App.php(365): CakePlugin::path('DebugKit')
+#1 /var/www/intra/lib/Cake/Core/App.php(226): App::pluginPath('DebugKit')
+#2 /var/www/intra/lib/Cake/Core/App.php(547): App::path('Controller/Comp...', 'DebugKit')
+#3 [internal function]: App::load('ToolbarComponen...')
+#4 [internal function]: spl_autoload_call('ToolbarComponen...')
+#5 /var/www/intra/lib/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#6 /var/www/intra/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#7 /var/www/intra/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#8 /var/www/intra/lib/Cake/Routing/Dispatcher.php(186): Controller->constructClasses()
+#9 /var/www/intra/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/intra/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-27 20:19:24 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /intra/users/login
+Stack Trace:
+#0 /var/www/intra/lib/Cake/Core/App.php(365): CakePlugin::path('DebugKit')
+#1 /var/www/intra/lib/Cake/Core/App.php(226): App::pluginPath('DebugKit')
+#2 /var/www/intra/lib/Cake/Core/App.php(547): App::path('Controller/Comp...', 'DebugKit')
+#3 [internal function]: App::load('ToolbarComponen...')
+#4 [internal function]: spl_autoload_call('ToolbarComponen...')
+#5 /var/www/intra/lib/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#6 /var/www/intra/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#7 /var/www/intra/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#8 /var/www/intra/lib/Cake/Routing/Dispatcher.php(186): Controller->constructClasses()
+#9 /var/www/intra/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/intra/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-27 20:21:43 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /intra/users/login
+Stack Trace:
+#0 /var/www/intra/lib/Cake/Core/App.php(365): CakePlugin::path('DebugKit')
+#1 /var/www/intra/lib/Cake/Core/App.php(226): App::pluginPath('DebugKit')
+#2 /var/www/intra/lib/Cake/Core/App.php(547): App::path('Controller/Comp...', 'DebugKit')
+#3 [internal function]: App::load('ToolbarComponen...')
+#4 [internal function]: spl_autoload_call('ToolbarComponen...')
+#5 /var/www/intra/lib/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#6 /var/www/intra/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#7 /var/www/intra/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#8 /var/www/intra/lib/Cake/Routing/Dispatcher.php(186): Controller->constructClasses()
+#9 /var/www/intra/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/intra/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-27 20:21:54 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /intra/users/login
+Stack Trace:
+#0 /var/www/intra/lib/Cake/Core/App.php(365): CakePlugin::path('DebugKit')
+#1 /var/www/intra/lib/Cake/Core/App.php(226): App::pluginPath('DebugKit')
+#2 /var/www/intra/lib/Cake/Core/App.php(547): App::path('Controller/Comp...', 'DebugKit')
+#3 [internal function]: App::load('ToolbarComponen...')
+#4 [internal function]: spl_autoload_call('ToolbarComponen...')
+#5 /var/www/intra/lib/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#6 /var/www/intra/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#7 /var/www/intra/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#8 /var/www/intra/lib/Cake/Routing/Dispatcher.php(186): Controller->constructClasses()
+#9 /var/www/intra/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/intra/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-27 20:22:04 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /intra/users/login
+Stack Trace:
+#0 /var/www/intra/lib/Cake/Core/App.php(365): CakePlugin::path('DebugKit')
+#1 /var/www/intra/lib/Cake/Core/App.php(226): App::pluginPath('DebugKit')
+#2 /var/www/intra/lib/Cake/Core/App.php(547): App::path('Controller/Comp...', 'DebugKit')
+#3 [internal function]: App::load('ToolbarComponen...')
+#4 [internal function]: spl_autoload_call('ToolbarComponen...')
+#5 /var/www/intra/lib/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#6 /var/www/intra/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#7 /var/www/intra/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#8 /var/www/intra/lib/Cake/Routing/Dispatcher.php(186): Controller->constructClasses()
+#9 /var/www/intra/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/intra/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-27 20:28:45 Error: Fatal Error (1): Call to undefined function ldap_connect() in [/var/www/intra/app/Controller/Component/LDAPComponent.php, line 33]
+2014-05-27 20:28:45 Error: [FatalErrorException] Call to undefined function ldap_connect()
+Request URL: /intra/users/login
+Stack Trace:
+#0 /var/www/intra/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/intra/...', 33)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/intra/...', 33, Array)
+#2 /var/www/intra/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/intra/...', 33, Array)
+#3 /var/www/intra/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

@@ -1,0 +1,27 @@
+/*
+** Css style for the login Page
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+
+body {
+	background-image: url('back/login.png');
+	color: gray;
+	font-family: 'Roboto', sans-serif;
+}
+
+form input[type = "text"], form input[type = "password"] {
+	height: 30px;
+	width: 30%;
+	margin-bottom: 0.5%;
+	border: 2px solid  #CBC8BD;
+}
+
+form input[type = "submit"] {
+	height: 25px;
+	background: white;
+	border: 1.5px solid #52616D;
+	font-family: 'Roboto', sans-serif;
+	color: gray;
+	width: 25%;
+}

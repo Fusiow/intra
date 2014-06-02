@@ -181,3 +181,12 @@ width: 100%;
 .white_content .close {
 	float: right;
 }
+
+/* Form style */
+
+form input[type = "text"], form input[type = "password"] {
+	height: 30px;
+	width: 30%;
+	margin-bottom: 0.5%;
+	border: 2px solid  #CBC8BD;
+}
