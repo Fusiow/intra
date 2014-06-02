@@ -16,8 +16,10 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
+
 $cakeDescription = __d('dev', 'Intra 42');
 $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -32,6 +34,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 		echo $this->Html->css('icomoon');
 		echo $this->Html->css('home');
+		echo $this->Html->script('http://code.jquery.com/jquery-1.9.0.js');
+		echo $this->Html->script('main');
 		if ($title_for_layout == "Login")
 			echo $this->Html->css('login');
 		else
@@ -42,6 +46,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	?>
 </head>
 <body>
+	<?= $this->Session->flash() ?>
 	<?php if ($title_for_layout != "Login") { ?>
 	<header>
 		<!-- Menu -->

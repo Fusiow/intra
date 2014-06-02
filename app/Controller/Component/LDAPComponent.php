@@ -32,7 +32,7 @@ class LDAPComponent extends Component
 		{
 			$this->link = ldap_connect($this->host, $this->port);
 			ldap_set_option($this->link, LDAP_OPT_PROTOCOL_VERSION, 3);
-			$bind = ldap_bind($this->link, 'uid='.$user.','.$this->basedn, $password);
+			$bind = @ldap_bind($this->link, 'uid='.$user.','.$this->basedn, $password);
 			return ($bind);
 		}
 		return (false);
@@ -48,16 +48,27 @@ class LDAPComponent extends Component
 	{
 		if (isset($options['User']))
 		{
-			if (isset($options['User']['username']) && isset($options['User']['password']) && $this->Session->check('LDAP.User') === false)
+			if (isset($options['User']['username']) && isset($options['User']['password']) && $this->Session->check('LDAP.User') == false)
 			{
 				$user = $options['User']['username'];
 				$password = $options['User']['password'];
 				if ($this->__connect($user, $password) === true)
 				{
+					$attribute = array('mobile-phone', 'cn', 'birth-date');
 					$this->user = $user;
 					$this->password = $password;
 					$this->Session->write('LDAP.User.username', $user);
 					$this->Session->write('LDAP.User.password', base64_encode($password));
+					$data = $this->find(array('attribute' => 'uid', 'value' => $this->user));
+					foreach ($data as $d) {
+						$perso[] = $d;
+					}
+					foreach ($perso[1] as $p) {
+						$res[] = $p;
+					}
+					for ($i = 0; isset($res[$i + 1]); $i = $i + 2) {
+$this->Session->write("LDAP.User.".(string)"".$res[$i + 1]."", $res[$i]['0']);
+					}
 					$this->__close();
 					return (true);
 				}

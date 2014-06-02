@@ -73,5 +73,7 @@ class PagesController extends AppController {
 			}
 			throw new NotFoundException();
 		}
+		if (!$this->Session->read('LDAP.User'))
+			$this->redirect('/users/login?omg');
 	}
 }

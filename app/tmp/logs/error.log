@@ -184,3 +184,105 @@ Stack Trace:
 #3 /var/www/intra/lib/Cake/Core/App.php(902): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-06-02 03:48:35 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/Controller/Component/LDAPComponent.php, line 18]
+2014-06-02 03:48:35 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Volumes/Data/n...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Volumes/Data/n...', 18, Array)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Volumes/Data/n...', 18, Array)
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-02 03:53:14 Error: Fatal Error (1): Cannot use object of type SessionComponent as array in [/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/Controller/UsersController.php, line 20]
+2014-06-02 03:53:14 Error: [FatalErrorException] Cannot use object of type SessionComponent as array
+Request URL: /users/login
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use obje...', '/Volumes/Data/n...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', '/Volumes/Data/n...', 20, Array)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', '/Volumes/Data/n...', 20, Array)
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-02 03:54:11 Error: Fatal Error (1): Undefined class constant 'user' in [/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/Controller/UsersController.php, line 20]
+2014-06-02 03:54:11 Error: [FatalErrorException] Undefined class constant 'user'
+Request URL: /users/login
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Undefined class...', '/Volumes/Data/n...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Undefined class...', '/Volumes/Data/n...', 20, Array)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Undefined class...', '/Volumes/Data/n...', 20, Array)
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-02 03:55:16 Error: Fatal Error (1): Undefined class constant 'user' in [/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/Controller/UsersController.php, line 21]
+2014-06-02 03:55:16 Error: [FatalErrorException] Undefined class constant 'user'
+Request URL: /users/login
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Undefined class...', '/Volumes/Data/n...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Undefined class...', '/Volumes/Data/n...', 21, Array)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Undefined class...', '/Volumes/Data/n...', 21, Array)
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-02 06:50:51 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /users
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-02 07:06:18 Error: Fatal Error (4): syntax error, unexpected 'if' (T_IF) in [/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Layouts/default.ctp, line 22]
+2014-06-02 07:06:18 Error: [FatalErrorException] syntax error, unexpected 'if' (T_IF)
+Request URL: /
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/Data/n...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/Data/n...', 22, Array)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/Data/n...', 22, Array)
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-02 07:07:44 Error: Fatal Error (1): Call to undefined method View::redirect() in [/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Layouts/default.ctp, line 19]
+2014-06-02 07:07:44 Error: [FatalErrorException] Call to undefined method View::redirect()
+Request URL: /
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Volumes/Data/n...', 19)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Volumes/Data/n...', 19, Array)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Volumes/Data/n...', 19, Array)
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-02 07:08:14 Error: Fatal Error (1): Call to undefined function Location() in [/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Layouts/default.ctp, line 20]
+2014-06-02 07:08:14 Error: [FatalErrorException] Call to undefined function Location()
+Request URL: /
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Volumes/Data/n...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Volumes/Data/n...', 20, Array)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Volumes/Data/n...', 20, Array)
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-02 07:10:25 Error: Fatal Error (1): Call to undefined method View::redirect() in [/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Layouts/default.ctp, line 71]
+2014-06-02 07:10:25 Error: [FatalErrorException] Call to undefined method View::redirect()
+Request URL: /
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Volumes/Data/n...', 71)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Volumes/Data/n...', 71, Array)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Volumes/Data/n...', 71, Array)
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-02 07:12:42 Error: [MissingActionException] Action UsersController::logindwdwdwqdd() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logindwdwdwqdd',
+)
+Request URL: /users/logindwdwdwqdd
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

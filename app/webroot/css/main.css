@@ -190,3 +190,11 @@ form input[type = "text"], form input[type = "password"] {
 	margin-bottom: 0.5%;
 	border: 2px solid  #CBC8BD;
 }
+
+/* Session Flash (Notif) Style */
+
+.message {
+	background-color: red;
+	color: white;
+	text-align: center;
+}

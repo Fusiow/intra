@@ -46,7 +46,7 @@ class AppController extends Controller {
 		}
 		Configure::write('Config.language', $this->Session->read('User.language'));
 		$this->params['language'] = $this->Session->read('User.language');
-	//	$this->Auth->allow();
+		$this->Auth->allow();
 	}
 
 	function recordActivity() {
