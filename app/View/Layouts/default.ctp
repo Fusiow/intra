@@ -53,14 +53,19 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			<div id='menu'>
 				<ul>
 					<li id='first'><a href="#"><i id='iconmenu' class='icon-home'></i></a></li>
-					<li><a href="#"><i class='icon-user3'></i>Profil</a></li>
+					<li><a href="#"><i class='icon-user3'></i><?= $this->Session->read('LDAP.User.uid')?></a></li>
 					<li><a href="#"><i class='icon-tree'></i>Modules</a></li>
 					<li><a href="#"><i class='icon-bubbles2'></i>Forum</a></li>
 					<li><a href="#"><i class='icon-calendar'></i>Planning</a></li>
-					<li id='last'><a href="#"><i id='iconmenu' class='icon-cog'></i></a></li>
+					<li id='last'><a href="#" class='buttonsub'><i id='iconmenu' class='icon-cog'></i></a>
+										</li>
 					<li class='stretch'></li>
+</ul>	
+<ul class='sub'>
+		<li><a href="#"><i class='icon-cogs'></i>Parametres</a></li>
+		<li><a href="#"><i class='icon-switch'></i>Deconnexion</a></li>
 </ul>
-			</div>
+</div>
 	</header>
 	<?php } ?>
 <div id='content'>

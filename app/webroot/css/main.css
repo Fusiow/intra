@@ -106,6 +106,19 @@ color: #E5E1D1;
 	padding-right: 0;
 }
 
+.sub {
+	color: #FFFFFF;
+	background-color: #454F58;
+	padding-left: 0.5%;
+	display: none;
+	height: auto;
+	width: auto;
+	padding-left: 2%;
+	padding-right: 2%;
+	transition-duration: 0.3s;
+	transition-property: background-color, color;
+}
+
 /* Content */
 
 #content {
@@ -191,10 +204,3 @@ form input[type = "text"], form input[type = "password"] {
 	border: 2px solid  #CBC8BD;
 }
 
-/* Session Flash (Notif) Style */
-
-.message {
-	background-color: red;
-	color: white;
-	text-align: center;
-}
