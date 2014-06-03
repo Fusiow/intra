@@ -10,11 +10,7 @@ function subMenu(attr) {
 		$('.sub_' + attr).show(400);
 		g_isclick = 1;
 		g_actsub = attr;
-	} else if (g_actsub == attr){
-		$('.sub_' + attr).hide(400);
-		g_isclick = 0;
-		g_actsub = NULL;
-	} else {
+	} else if (attr != g_actsub) {
 		$('.sub_' + g_actsub).hide(400);
 		$('.sub_' + attr).show(400);
 		g_actsub = attr;

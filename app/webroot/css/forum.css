@@ -46,7 +46,7 @@
 
 #forum .question {
 	width: 100%;
-	background: white;
+	background: rgb(252, 251, 242);
 	color: black;
 	border: 3px solid  rgba(0, 0, 0, 0.71);
 	border-collapse: separate;
@@ -170,3 +170,36 @@ width: 100%;
 	color: rgba(240, 245, 248, 0.71);
 }
 
+#forum .stat {
+	background: rgba(255, 255, 255, 0.32);
+	width: 20%;
+	color: rgb(209, 209, 209);
+	border:1px solid rgba(255, 255, 255, 0.29); 
+}
+
+#forum .parent {
+	padding-left: 2%;
+	margin-top: 1%;
+}
+
+#forum .first {
+	float: left;
+	font-size: 1.2em;
+}
+
+#forum .o {
+	background: rgba(255, 255, 255, 0.18);
+	display: inline-table;
+	width: 100%;
+}
+
+#forum .t {
+	background: rgba(0, 0, 0, 0.43);
+	display: inline-table;
+	width: 100%;
+}
+
+#forum .second {
+	margin-left: 40%;
+	width: 55%;
+}

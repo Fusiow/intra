@@ -55,16 +55,21 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 				<ul>
 					<li id='first'><a href="/"><i id='iconmenu' class='icon-home'></i></a></li>
 					<li><a href="#"><i class='icon-user3'></i><?= $this->Session->read('LDAP.User.uid')?></a></li>
-					<li><a href="#"><i class='icon-tree'></i>Modules</a></li>
+					<li><a href="#" onMouseOver="subMenu('module')"><i class='icon-tree'></i>Modules</a></li>
 					<li><a href="/forums"><i class='icon-bubbles2'></i>Forum</a></li>
 					<li><a href="#"><i class='icon-calendar'></i>Planning</a></li>
-					<li id='last'><a href="#" onclick="subMenu('param')"><i id='iconmenu' class='icon-cog'></i></a>
+					<li id='last'><a href="#" onMouseOver="subMenu('param')"><i id='iconmenu' class='icon-cog'></i></a>
 										</li>
 					<li class='stretch'></li>
 </ul>	
 <ul class='sub sub_param'>
 		<li><a href="#"><i class='icon-cogs'></i>Parametres</a></li>
 		<li><a href="/users/logout"><i class='icon-switch'></i>Deconnexion</a></li>
+</ul>
+<ul class='sub sub_module'>
+	<li><a href="#">Unix II</a></li>
+	<li><a href="#">Infographie</a></li>
+	<li><a href="#">Web II</a></li>
 </ul>
 </div>
 	</header>

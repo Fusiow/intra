@@ -2,8 +2,8 @@
 	<div id="forum_menu">
 		<ul>
 			<li><a href="#">Infographie</a></li>
-			<li><a href="#"onclick="subMenu('unix')">Unix_II</a></li>
-			<li><a href="#" onclick="subMenu('web')">Web_II</a></li>
+			<li><a href="#"onMouseOver="subMenu('unix')">Unix_II</a></li>
+			<li><a href="#" onMouseOver="subMenu('web')">Web_II</a></li>
 			<li class='stretch'></li>
 		</ul>
 		<ul class='sub sub_f sub_web'>
@@ -25,7 +25,23 @@
 
 	<?= $this->Form->input('word', array('placeholder' => 'Search...', 'label' => '', 'required')); ?>
 	</div>
-	<br />
+	<div class='parent'>
+		<div class='stat first'>
+			<h1>Stats</h1>
+			<div class='o'>Messages: 42</div>
+			<div class='t'>Commentaires: 10</div>
+			<div class='o'>Vote Positifs: 15</div>
+		</div>
+		<div class='stat second'>
+			<h1>Vos derniers messages</h1>
+			<div class='o'>Wassup ?!</div>
+			<div class='t'>Wassfweffeup ?!</div>
+			<div class='o'>Wfweffeup ?!</div>
+			<div class='t'>Wassfweffeuqwdwqwfefwp ?!</div>
+			<div class='o'>Wassfweffeup ?!</div>
+		</div>
+	</div>
+	<h1>Last questions</h1>
 		<table class='question'>
 		<tr>
 			<th class='icon'><i class='icon-question'></i> <i style='padding-left: 20%;' class='icon-bubbles2'></i></th>
