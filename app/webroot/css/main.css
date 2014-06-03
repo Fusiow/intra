@@ -65,7 +65,7 @@ color: red;
 
 #menu ul {
 	padding-top: 4px;
-height: 42px;
+	height: 42px;
 		text-align: justify;
 }
 
@@ -107,6 +107,7 @@ color: #E5E1D1;
 }
 
 .sub {
+	font-size: 0.8em;
 	color: #FFFFFF;
 	background-color: #454F58;
 	padding-left: 0.5%;

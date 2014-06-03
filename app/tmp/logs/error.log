@@ -286,3 +286,99 @@ Stack Trace:
 #1 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-06-03 04:20:17 Error: [MissingControllerException] Controller class ForumsController could not be found.
+Exception Attributes: array (
+  'class' => 'ForumsController',
+  'plugin' => NULL,
+)
+Request URL: /forums
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-03 04:21:13 Error: [MissingControllerException] Controller class ForumsController could not be found.
+Exception Attributes: array (
+  'class' => 'ForumsController',
+  'plugin' => NULL,
+)
+Request URL: /forums
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-03 04:21:17 Error: [MissingControllerException] Controller class ForumController could not be found.
+Exception Attributes: array (
+  'class' => 'ForumController',
+  'plugin' => NULL,
+)
+Request URL: /forum
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-03 04:21:21 Error: [MissingControllerException] Controller class ForumsController could not be found.
+Exception Attributes: array (
+  'class' => 'ForumsController',
+  'plugin' => NULL,
+)
+Request URL: /forums
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-03 04:21:39 Error: [MissingControllerException] Controller class ForumsController could not be found.
+Exception Attributes: array (
+  'class' => 'ForumsController',
+  'plugin' => NULL,
+)
+Request URL: /forums
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-03 04:21:53 Error: [MissingControllerException] Controller class ForumsController could not be found.
+Exception Attributes: array (
+  'class' => 'ForumsController',
+  'plugin' => NULL,
+)
+Request URL: /forums
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-03 04:22:33 Error: [MissingActionException] Action ForumsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'ForumsController',
+  'action' => 'index',
+)
+Request URL: /forums
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ForumsController), Object(CakeRequest))
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-03 04:22:50 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/index.ctp',
+)
+Request URL: /forums
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ForumsController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-03 04:29:42 Error: Fatal Error (1): Call to a member function Create() on a non-object in [/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/index.ctp, line 4]
+2014-06-03 04:29:42 Error: [FatalErrorException] Call to a member function Create() on a non-object
+Request URL: /forums
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Volumes/Data/n...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Volumes/Data/n...', 4, Array)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Volumes/Data/n...', 4, Array)
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-03 04:34:55 Error: [MissingControllerException] Controller class FController could not be found.
+Exception Attributes: array (
+  'class' => 'FController',
+  'plugin' => NULL,
+)
+Request URL: /f
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

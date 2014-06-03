@@ -34,6 +34,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 		echo $this->Html->css('icomoon');
 		echo $this->Html->css('home');
+		echo $this->Html->css('forum');
 		echo $this->Html->script('http://code.jquery.com/jquery-1.9.0.js');
 		echo $this->Html->script('main');
 		if ($title_for_layout == "Login")
@@ -52,18 +53,18 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<!-- Menu -->
 			<div id='menu'>
 				<ul>
-					<li id='first'><a href="#"><i id='iconmenu' class='icon-home'></i></a></li>
+					<li id='first'><a href="/"><i id='iconmenu' class='icon-home'></i></a></li>
 					<li><a href="#"><i class='icon-user3'></i><?= $this->Session->read('LDAP.User.uid')?></a></li>
 					<li><a href="#"><i class='icon-tree'></i>Modules</a></li>
-					<li><a href="#"><i class='icon-bubbles2'></i>Forum</a></li>
+					<li><a href="/forums"><i class='icon-bubbles2'></i>Forum</a></li>
 					<li><a href="#"><i class='icon-calendar'></i>Planning</a></li>
-					<li id='last'><a href="#" class='buttonsub'><i id='iconmenu' class='icon-cog'></i></a>
+					<li id='last'><a href="#" onclick="subMenu('param')"><i id='iconmenu' class='icon-cog'></i></a>
 										</li>
 					<li class='stretch'></li>
 </ul>	
-<ul class='sub'>
+<ul class='sub sub_param'>
 		<li><a href="#"><i class='icon-cogs'></i>Parametres</a></li>
-		<li><a href="#"><i class='icon-switch'></i>Deconnexion</a></li>
+		<li><a href="/users/logout"><i class='icon-switch'></i>Deconnexion</a></li>
 </ul>
 </div>
 	</header>
