@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost:3306
--- Généré le :  Mar 03 Juin 2014 à 06:05
+-- Généré le :  Mer 04 Juin 2014 à 07:53
 -- Version du serveur :  5.5.36
 -- Version de PHP :  5.4.26
 
@@ -51,6 +51,49 @@ CREATE TABLE IF NOT EXISTS `forum_response` (
   `vote` int(11) NOT NULL,
   `as_vote` text NOT NULL,
   `date` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `modules`
+--
+
+CREATE TABLE IF NOT EXISTS `modules` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(30) NOT NULL,
+  `description` text NOT NULL,
+  `is_inscrit` text NOT NULL,
+  `date_begin` date NOT NULL,
+  `semester` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `semesters`
+--
+
+CREATE TABLE IF NOT EXISTS `semesters` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date_begin` date NOT NULL,
+  `date_end` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `subjects`
+--
+
+CREATE TABLE IF NOT EXISTS `subjects` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `description` text NOT NULL,
+  `is_inscrit` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
