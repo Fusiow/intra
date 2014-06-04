@@ -1,0 +1,25 @@
+.main {
+	background: #D9CB9E;
+}
+
+.main h1 {
+	padding-left: 8%;
+	border-bottom: 2px solid white;
+	margin-left: 2%;
+	margin-right: 25%;
+}
+
+.main .under_title {
+	padding-left: 12%;
+}
+
+.main .under_title h3 {
+	padding-left: 8%;
+	border-bottom: 2px solid white;
+	margin-left: 2%;
+	margin-right: 25%;
+}
+
+.main .under_sub_title {
+	padding-left: 10%;
+}

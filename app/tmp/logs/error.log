@@ -382,3 +382,281 @@ Request URL: /f
 Stack Trace:
 #0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-06-04 07:14:30 Error: Fatal Error (4): syntax error, unexpected ',', expecting '&' or variable (T_VARIABLE) in [/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/Controller/ForumsController.php, line 4]
+2014-06-04 07:14:30 Error: [FatalErrorException] syntax error, unexpected ',', expecting '&' or variable (T_VARIABLE)
+Request URL: /forums
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/Data/n...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/Data/n...', 4, Array)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/Data/n...', 4, Array)
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-04 07:14:35 Error: Fatal Error (4): syntax error, unexpected ',', expecting '&' or variable (T_VARIABLE) in [/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/Controller/ForumsController.php, line 4]
+2014-06-04 07:14:35 Error: [FatalErrorException] syntax error, unexpected ',', expecting '&' or variable (T_VARIABLE)
+Request URL: /forums/2
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/Data/n...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/Data/n...', 4, Array)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/Data/n...', 4, Array)
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-04 07:14:38 Error: Fatal Error (4): syntax error, unexpected ',', expecting '&' or variable (T_VARIABLE) in [/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/Controller/ForumsController.php, line 4]
+2014-06-04 07:14:38 Error: [FatalErrorException] syntax error, unexpected ',', expecting '&' or variable (T_VARIABLE)
+Request URL: /forums/2/3
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Volumes/Data/n...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Volumes/Data/n...', 4, Array)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Volumes/Data/n...', 4, Array)
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-04 07:15:11 Error: [MissingActionException] Action ForumsController::2() could not be found.
+Exception Attributes: array (
+  'controller' => 'ForumsController',
+  'action' => '2',
+)
+Request URL: /forums/2/3
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ForumsController), Object(CakeRequest))
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-04 07:16:47 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/test.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/test.ctp',
+)
+Request URL: /forums/test
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ForumsController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-04 07:16:53 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/test.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/test.ctp',
+)
+Request URL: /forums/test/1
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ForumsController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-04 07:16:56 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/test.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/test.ctp',
+)
+Request URL: /forums/test/1/2
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ForumsController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-04 07:21:22 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/test.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/test.ctp',
+)
+Request URL: /forums/test/1/2
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ForumsController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-04 07:21:47 Error: [MissingActionException] Action ForumsController::test() could not be found.
+Exception Attributes: array (
+  'controller' => 'ForumsController',
+  'action' => 'test',
+)
+Request URL: /forums/test/1/2
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ForumsController), Object(CakeRequest))
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-04 07:21:54 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/show.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/show.ctp',
+)
+Request URL: /forums/show/1/2
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ForumsController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-04 07:25:10 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/show.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/show.ctp',
+)
+Request URL: /forums/show/1/2
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ForumsController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-04 07:27:54 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/show.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/show.ctp',
+)
+Request URL: /forums/show/1/2
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ForumsController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-04 07:28:13 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/show.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/show.ctp',
+)
+Request URL: /forums/show/1/2/3
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ForumsController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-04 07:28:26 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/show.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/show.ctp',
+)
+Request URL: /forums/show/1/2/3
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ForumsController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-04 07:28:29 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/show.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/show.ctp',
+)
+Request URL: /forums/show/1/2
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ForumsController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-04 07:28:33 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/show.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/show.ctp',
+)
+Request URL: /forums/show/1
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ForumsController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-04 07:28:52 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/show.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/show.ctp',
+)
+Request URL: /forums/show/1
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ForumsController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-04 07:29:11 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/show.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/show.ctp',
+)
+Request URL: /forums/show/1
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ForumsController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-04 07:29:19 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/show.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/show.ctp',
+)
+Request URL: /forums/show/1
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ForumsController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-04 07:29:23 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/show.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/show.ctp',
+)
+Request URL: /forums/show/1/2
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ForumsController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-04 07:29:26 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/show.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/show.ctp',
+)
+Request URL: /forums/show/1/2/3
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ForumsController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-04 07:29:31 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/show.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Forums/show.ctp',
+)
+Request URL: /forums/show/1/2/3
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ForumsController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-04 08:01:14 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Shows/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/View/Shows/index.ctp',
+)
+Request URL: /shows/
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ShowsController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-04 08:04:54 Error: Fatal Error (64): Access level to ShowsController::$uses must be public (as in class AppController) in [/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/Controller/ShowsController.php, line 6]
+2014-06-04 08:04:54 Error: [FatalErrorException] Access level to ShowsController::$uses must be public (as in class AppController)
+Request URL: /shows/semester/id
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Access level to...', '/Volumes/Data/n...', 6)
+#1 [internal function]: ErrorHandler::handleError(64, 'Access level to...', '/Volumes/Data/n...', 6, Array)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Access level to...', '/Volumes/Data/n...', 6, Array)
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

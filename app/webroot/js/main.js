@@ -1,5 +1,5 @@
 var		g_isclick = 0;
-var		g_actsub = NULL;
+var		g_actsub = 0;
 
 function isEmpty( el ){
 	return !$.trim(el.html())
