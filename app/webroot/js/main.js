@@ -22,4 +22,8 @@ $(document).ready(function (){
 		$('.message').delay(1000).fadeOut(400);
 	}
 
+	if ($('#img_1') && $('#img_2')) {
+		$('#img_1').delay(800).slideDown(400);
+		$('#img_2').delay(1000).show(500);
+	}
 });
