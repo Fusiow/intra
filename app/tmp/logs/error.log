@@ -660,3 +660,63 @@ Stack Trace:
 #3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-06-08 01:45:05 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/Controller/AppController.php, line 88]
+2014-06-08 01:45:05 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /forums
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Volumes/Data/n...', 88)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Volumes/Data/n...', 88, Array)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Volumes/Data/n...', 88, Array)
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-08 01:45:14 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/Controller/AppController.php, line 88]
+2014-06-08 01:45:14 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /forums
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Volumes/Data/n...', 88)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Volumes/Data/n...', 88, Array)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Volumes/Data/n...', 88, Array)
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-08 01:45:15 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/Controller/AppController.php, line 88]
+2014-06-08 01:45:15 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /forums
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Volumes/Data/n...', 88)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Volumes/Data/n...', 88, Array)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Volumes/Data/n...', 88, Array)
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-08 01:45:33 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/Controller/AppController.php, line 88]
+2014-06-08 01:45:33 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /forums
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Volumes/Data/n...', 88)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Volumes/Data/n...', 88, Array)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Volumes/Data/n...', 88, Array)
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-08 01:45:39 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/Controller/AppController.php, line 88]
+2014-06-08 01:45:39 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /forums
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Volumes/Data/n...', 88)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Volumes/Data/n...', 88, Array)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Volumes/Data/n...', 88, Array)
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-08 01:46:08 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/app/Controller/AppController.php, line 89]
+2014-06-08 01:46:08 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /forums
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Volumes/Data/n...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Volumes/Data/n...', 89, Array)
+#2 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Volumes/Data/n...', 89, Array)
+#3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

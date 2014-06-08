@@ -32,6 +32,8 @@ App::uses('Controller', 'Controller');
 */
 class AppController extends Controller {
 
+	public $uses = array('Module');
+
 	public $components = array('Session','Cookie', 'Auth', 'LDAP' => array(
 		'host' => 'ldap.42.fr',
 		'port' => 389
@@ -40,13 +42,15 @@ class AppController extends Controller {
 	function beforeFilter() {
 		if (!$this->Session->read('User.language')) {
 			$this->Session->write('User.language', Configure::read('Config.language'));
-		}
-		if (isset($this->params['language'])) {
+		} if (isset($this->params['language'])) {
 			$this->Session->write('User.language', $this->params['language']);
 		}
 		Configure::write('Config.language', $this->Session->read('User.language'));
 		$this->params['language'] = $this->Session->read('User.language');
 		$this->Auth->allow();
+		if (!$this->Session->read('LDAP.User') && $this->here != "/Users/login") {
+			$this->redirect('/Users/login?omg');
+		}
 	}
 
 	function recordActivity() {
@@ -66,8 +70,7 @@ class AppController extends Controller {
 	function recordLog($log = null, $name = null, $uid = null) {
 			if ($log == 1) {
 				$this->request->data['Activity']['logged'] = 'Logout';
-			}
-			else {
+			} else {
 				$this->request->data['Activity']['logged'] = 'Login';
 			}
 			$this->request->data['Activity']['created'] = date("Y-m-d H:i:s");
@@ -81,5 +84,9 @@ class AppController extends Controller {
 		$this->request->data['Activity']['username'] = $user['User']['username'];
 		$this->request->data['Activity']['logged'] = 'Creation';
 		$this->Activity->save($this->request->data);
+	}
+
+	function beforeRender () {
+		$this->set('mods', $this->Module->find('all'));
 	}
 }

@@ -68,9 +68,11 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<li><a href="/users/logout"><i class='icon-switch'></i>Deconnexion</a></li>
 </ul>
 <ul class='sub sub_module'>
-	<li><a href="#">Unix II</a></li>
-	<li><a href="#">Infographie</a></li>
-	<li><a href="#">Web II</a></li>
+	<?php
+		foreach ($mods as $mod) {
+			echo "<li><a href='/Shows/module/".$mod['Module']['id']."''>".$mod['Module']['name']."</a></li>";
+		}
+	?>
 </ul>
 </div>
 	</header>

@@ -21,7 +21,12 @@ class ShowsController extends AppController {
 	}
 
 	public function		module($id) {
-
+		$lulz = $this->Module->find('all', array('conditions' => array('id' => $id)));
+		if ($lulz[0])
+			$this->set('module', $lulz[0]);
+		$subj = $this->Subject->find('all', array('conditions' => array('module_id' => $id)));
+		if ($subj)
+			$this->set('subject', $subj);
 	}
 
 	public function		subject($id) {
