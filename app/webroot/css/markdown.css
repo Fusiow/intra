@@ -1,0 +1,36 @@
+/*
+ * Markdown style for the forum
+ */ 
+
+.markdown {
+	padding-left: 1%;
+	padding-right: 2%;
+}
+
+.markdown pre {
+	width: 100%;
+	background: rgba(255, 255, 255, 0.68);
+	padding-left: 10%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.markdown a {
+	text-decoration: underline;
+}
+
+.markdown p {
+	margin-top: 1.5%;
+	margin-bottom: 1.5%;
+}
+
+.markdown blockquote {
+	width: 100% !important;
+	font-style: italic;
+	padding-left: 2%;
+	border-left: 3px solid rgb(107, 146, 216);
+}
+
+.markdown img {
+	width: 49%;
+}

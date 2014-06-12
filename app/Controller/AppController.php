@@ -34,10 +34,11 @@ class AppController extends Controller {
 
 	public $uses = array('Module');
 
-	public $components = array('Session','Cookie', 'Auth', 'LDAP' => array(
+	public $components = array('Session','Cookie', 'Auth', 'RequestHandler', 'LDAP' => array(
 		'host' => 'ldap.42.fr',
 		'port' => 389
 		));
+
 
 	function beforeFilter() {
 		if (!$this->Session->read('User.language')) {
@@ -51,6 +52,8 @@ class AppController extends Controller {
 		if (!$this->Session->read('LDAP.User') && $this->here != "/Users/login") {
 			$this->redirect('/Users/login?omg');
 		}
+		if ($this->RequestHandler->isAjax())
+			$this->layout = null;
 	}
 
 	function recordActivity() {

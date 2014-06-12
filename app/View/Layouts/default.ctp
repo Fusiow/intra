@@ -36,6 +36,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->Html->css('home');
 		echo $this->Html->css('forum');
 		echo $this->Html->css('show');
+		echo $this->Html->css('new');
+		echo $this->Html->css('markdown');
 		echo $this->Html->script('http://code.jquery.com/jquery-1.9.0.js');
 		echo $this->Html->script('main');
 		if ($title_for_layout == "Login")
