@@ -55,7 +55,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			<div id='menu'>
 				<ul>
 					<li id='first'><a href="/"><i id='iconmenu' class='icon-home'></i></a></li>
-					<li><a href="#"><i class='icon-user3'></i><?= $this->Session->read('LDAP.User.uid')?></a></li>
+					<li><a href="/users/profile/<?= $this->Session->read('LDAP.User.uidnumber')?>"><i class='icon-user3'></i><?= $this->Session->read('LDAP.User.uid')?></a></li>
 					<li><a href="#" onMouseOver="subMenu('module')"><i class='icon-tree'></i>Modules</a></li>
 					<li><a href="/forums"><i class='icon-bubbles2'></i>Forum</a></li>
 					<li><a href="#"><i class='icon-calendar'></i>Planning</a></li>
