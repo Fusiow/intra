@@ -44,6 +44,7 @@ $(document).ready(function (){
 		var mark = converter.makeHtml($('.mark').val());
 		$('#result').empty().append(mark);
 		$('#result').val().replace(/\n/g, "<br />");
+		hljs.highlightBlock($('pre code')[0], ' ', false);
 	});
 
 	$('#category').change(function(){
@@ -52,7 +53,6 @@ $(document).ready(function (){
 				url: '/forums/sub_category/' + $(this).val(),
 				success: function(data) {
 					str = data;
-					alert(str);
 					$('#subcategory').html('');
 					$('#subcategory').append(str);
 					if (g_sub_categ_show == 0) {
@@ -63,4 +63,6 @@ $(document).ready(function (){
 			});
 		});
 	});
+
+	hljs.initHighlightingOnLoad();
 });

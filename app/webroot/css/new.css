@@ -55,5 +55,5 @@ form select {
 }
 
 #subcategory {
-	display: hidden;
+	display: none;
 }

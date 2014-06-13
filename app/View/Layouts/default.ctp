@@ -30,20 +30,32 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<?php echo $title_for_layout; ?>
 	</title>
 	<?php
-		echo $this->Html->meta('icon');
+		/* Css stylesheet */
+			echo $this->Html->css('icomoon');
+			echo $this->Html->css('home');
+			echo $this->Html->css('forum');
+			echo $this->Html->css('show');
+			echo $this->Html->css('new');
+			echo $this->Html->css('markdown');
+			echo $this->Html->css('toggle');
+			echo $this->Html->css('subject');
+			echo $this->Html->css('dark');
 
-		echo $this->Html->css('icomoon');
-		echo $this->Html->css('home');
-		echo $this->Html->css('forum');
-		echo $this->Html->css('show');
-		echo $this->Html->css('new');
-		echo $this->Html->css('markdown');
-		echo $this->Html->script('http://code.jquery.com/jquery-1.9.0.js');
-		echo $this->Html->script('main');
-		if ($title_for_layout == "Login")
-			echo $this->Html->css('login');
-		else
-			echo $this->Html->css('main');
+			/* Enlever le menu style de la page login */
+				if ($title_for_layout == "Login")
+					echo $this->Html->css('login');
+				else
+					echo $this->Html->css('main');
+
+		/* Js scripts */
+			echo $this->Html->script('http://code.jquery.com/jquery-1.9.0.js');
+			echo $this->Html->script('http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js');
+			echo $this->Html->script('toggles.min');
+			echo $this->Html->script('main');
+			echo $this->Html->script('showdown');
+			echo $this->Html->script('highlight.pack');
+		
+
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
