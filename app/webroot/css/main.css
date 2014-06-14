@@ -20,18 +20,17 @@ outline: none;
 margin: 0;
 }
 
-html, body {
-margin: 0;
-height: 100%;
-width: 100%;
-padding: 0;
+body {
+	margin: 0;
+	height: 100%;
+	padding: 0;
 }
 
 html {
+	height: 100%;
 	background-color: #E5E1D1;
-color:  #52616D;
-		font-family: 'Roboto', sans-serif;
-width: 100%;
+	color:  #52616D;
+	font-family: 'Roboto', sans-serif;
 }
 
 .green-style {
@@ -46,16 +45,11 @@ color: red;
 
 a {
 	text-decoration: none;
-color: #52616D;
-	   transition-property: color;
-	   transition-duration: 0.3s;
+	transition-property: color;
+	transition-duration: 0.3s;
 }
 
-a:hover {
-color: red;
-  }
-
-/* Menu */
+/* Menu
 
 #menu {
 	background-color: #2C343B;
@@ -119,16 +113,124 @@ color: #E5E1D1;
 	transition-duration: 0.3s;
 	transition-property: background-color, color;
 }
+*/
 
+/* Head style */
+
+.head {
+	position: fixed;
+	width: 100%;
+	z-index: 300;
+	background: #1E1E20;
+	min-height: 5%;
+	padding-left: 120px;
+}
+
+.head h1 {
+	font-family: 'Title';
+	color: #FFFFFF;
+	font-size: 3em;
+}
+
+.head table {
+	width: 100%;
+}
+
+.head input[type="text"]{
+	height: 30px;
+	width: 300px;
+}
+
+.head  button {
+	border: 0;
+	height: 30px;
+	width: 30px;
+	margin-left: -1.2%;
+}
+
+/* Menu 2 style */
+
+.menu {
+	z-index: 301;
+	height: 100vh;
+	width: 90px;
+	float: left;
+	font-size: 400%;
+	position: fixed;
+	background-color: #2C343B;
+	border-right: 2px solid rgba(255, 255, 255, 0.22);
+}
+
+.menu table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.menu table tr td {
+	padding-bottom: 4.5vh;
+	padding-top: 4.5vh;
+	padding-left: 10%;
+	padding-right: 10%;
+	transition-property: background-color;
+	transition-duration: 0.3s;
+}
+
+.menu table tr td:hover {
+	background-color: #4C657A;
+}
+
+.menu table tr td a {
+	color: rgba(255, 255, 255, 0.60);
+}
 /* Content */
 
 #content {
+	padding-top: 5%;
 	background-color: rgba(255, 255, 255, 0.76);
-height: 96%;
-width: 100%;
-	   padding-top: 2%;
-	   padding-left: 5%;
-	   padding-right: 5%;
+	height: 100%;
+	width: 100%;
+	padding-left: 280px;
+}
+
+/* SUbmenu style */
+
+.submenu {
+	padding-top: 75px;
+	background: #2A2C2B;
+	height: 100vh;
+	width: 190px;
+	margin-left: 80px;
+	float: left;
+	color: white;
+	position: fixed;
+	padding-left: 1%;
+}
+
+.submenu .title {
+	margin-left: 20%;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.submenu ul {
+	padding: 0;
+	margin-top: 10%;
+}
+
+.submenu ul li {
+	list-style: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+	margin-bottom: 4%;
+	padding-left: 5%;
+	padding-bottom: 1%;
+}
+
+.submenu ul li .fa {
+	font-size: 0.2em;
+}
+
+.submenu ul li i {
+	padding-right: 10%;
 }
 
 /* Panel Style */

@@ -4,7 +4,7 @@ include 'parsedown.php';
 include 'parsedown_extra.php';
 
 class ForumsController extends AppController {
-	public $uses = array('Subject', 'Forum', 'User');
+	public $uses = array('Subject', 'Forum', 'User', 'Forum_response');
 
 	public function		index() {
 
@@ -23,6 +23,12 @@ class ForumsController extends AppController {
 	}
 
 	public function		subject($id) {
+		if ($this->request->is('post')) {
+			$this->request->data['response']['author'] = $this->Session->read('LDAP.User.uidnumber');
+			$this->request->data['response']['subject_id'] = $id;
+			$this->request->data['response']['date']= date('Y')."-".date("m")."-".date('d');
+			$this->Forum_response->save($this->request->data['response']);
+		}
 		$parse = new ParsedownExtra();
 		$res = $this->Forum->find('all', array('conditions' => array('id' => $id)));
 		$this->set('result', $res[0]['Forum']);
@@ -30,6 +36,14 @@ class ForumsController extends AppController {
 		$this->set('author', $info);
 		$text = $parse->text($res[0]['Forum']['text']);
 		$this->set('text', $text);
+		$response = $this->Forum_response->find('all', array('conditions' => array('subject_id' => $res[0]['Forum']['id'])));
+		for ($i = 0; isset($response[$i]); $i++) {
+			$infos = $this->User->find('all', array('conditions' => array('id' => $response[$i]['Forum_response']['author'])));
+			$response[$i]['Forum_response']['uid'] = $infos[0]['User']['uid'];
+			$response[$i]['Forum_response']['picture'] = $infos[0]['User']['picture'];
+			$response[$i]['Forum_response']['text'] = $parse->text($response[$i]['Forum_response']['text']);
+		}
+		$this->set('response', $response);
 	}
 
 	public function		add() {

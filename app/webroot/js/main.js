@@ -44,7 +44,7 @@ $(document).ready(function (){
 		var mark = converter.makeHtml($('.mark').val());
 		$('#result').empty().append(mark);
 		$('#result').val().replace(/\n/g, "<br />");
-		hljs.highlightBlock($('pre code')[0], ' ', false);
+		hljs.highlightBlock($('#result pre code')[0], ' ', false);
 	});
 
 	$('#category').change(function(){

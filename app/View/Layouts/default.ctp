@@ -40,6 +40,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			echo $this->Html->css('toggle');
 			echo $this->Html->css('subject');
 			echo $this->Html->css('dark');
+			echo $this->Html->css('//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
 
 			/* Enlever le menu style de la page login */
 				if ($title_for_layout == "Login")
@@ -65,7 +66,53 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<?= $this->Session->flash() ?>
 	<?php if ($title_for_layout != "Login") { ?>
 	<header>
-		<!-- Menu -->
+		<div class='head'>
+			<table>
+				<tr>
+					<td>
+						<h1>INTRA</h1>
+					</td>
+					<td>
+						<input type="text" placeholder="Search..."/>
+						<button type="submit"><i class="fa fa-search"></i></button>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class='menu'>
+			<table>
+				<tr>
+					<td><a href='/'><i class='icon-home'></i></a></td>
+				</tr>
+				<tr>
+				<td><a href='/users/profile/<?= $this->Session->read('LDAP.User.uidnumber') ?>'<i class='icon-user3'></i></td>
+				</tr>
+				<tr>
+					<td><a href='#'><i class='icon-tree'></i></a></td>
+				</tr>
+				<tr>
+					<td><a href='/forums'><i class='icon-bubbles2'></i></a></td>
+				</tr>
+				<tr>
+					<td><a href='#'><i class='icon-calendar'></i></a></td>
+				</tr>
+				<tr>
+					<td><a href='#'><i class='icon-cog'></i></a></td>
+				</tr>
+			</table>
+		</div>
+		<div class='submenu'>
+			<span class='title'><?= $this->Session->read('LDAP.User.uid'); ?></span>
+			<ul>
+				<li><i class='icon-user3'></i> Profil <i class='fa fa-chevron-down'></i></li>
+				<li><i class='icon-tree'></i> Modules <i class='fa fa-chevron-down'></i></li>
+				<li><i class='icon-bubbles2'></i> Forum <i class='fa fa-chevron-down'></i></li>
+				<li><i class='icon-calendar'></i> Planning <i class='fa fa-chevron-down'></i></li>
+				<li><i class='icon-cog'></i> Parametres <i class='fa fa-chevron-down'></i></li>
+				
+			</ul>
+		</div>
+		<!-- Menu 
 			<div id='menu'>
 				<ul>
 					<li id='first'><a href="/"><i id='iconmenu' class='icon-home'></i></a></li>
@@ -88,7 +135,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		}
 	?>
 </ul>
-</div>
+</div>-->
 	</header>
 	<?php } ?>
 <div id='content'>
