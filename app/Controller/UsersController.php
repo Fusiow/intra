@@ -61,7 +61,8 @@ class UsersController extends AppController {
 					}
 				$result[$i] = array(
 						'Name' => $request[$i]['Module']['name'],
-						'Description' => $request[$i]['Module']['description']
+						'Description' => $request[$i]['Module']['description'],
+						'id' => $request[$i]['Module']['id']
 					); 
 				}
 			}
