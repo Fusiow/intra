@@ -17,12 +17,12 @@
 		margin-left: 10px;
 		margin-top: 50px;
 	}
-	table {
+	.table {
 		border-width: 5px;
 		border-style: solid;
 		width: 100%;
 	}
-	td {
+	.table td {
 		border-width: 1px;
 		border-style: solid;
 	}
@@ -58,14 +58,38 @@
 </br>
 </br>
 </br>
-<table>
+<table class='table'>
 	<tr>
 		<th>Inscrit au module</th>
 		<th>Description</th>
 	</tr>
 <?php
-	for ($i = 0; isset($module[$i]); $i++) {
+	for ($i = 1; isset($module[$i]); $i++) {
 		echo "<tr><td>".$module[$i]['Name']."</td><td>".$module[$i]['Description']."</td></tr>";
 	}
+?>
+</table>
+
+<table class='table'>
+	<tr>
+		<th>Nom du sujet</th>
+		<th>Description</th>
+		<th>Corrections</th>
+		<th>Note finale</th>
+	</tr>
+	<?php
+		for ($i = 0; isset($subject[$i]); $i++) {
+			$id = $subject[$i]['id'];
+			echo "<tr>";
+			echo "<td>".$subject[$i]['name']."</td>";
+			echo "<td>".$subject[$i]['description']."</td>";
+			echo "<td>";
+			for ($j = 1; isset($note[$subject[$i]['id']]['note']['note'][$j]); $j++) {
+				echo $note[$id]['note']['note'][$j].", ";
+			}
+			echo "</td>";
+			echo "<td>".$note[$id]['note']['finale_note']."</td>";
+			echo "</tr>";
+		}
 ?>
 </table>

@@ -3,7 +3,7 @@ App::uses('AuthComponent', 'Controller/Component');
 
 class UsersController extends AppController {
 
-	public $uses = array('Module');
+	public $uses = array('Module', 'Note', 'Subject');
 	/*
 	** Class for User control, LDAP connexion and ressources
 	*/
@@ -41,22 +41,45 @@ class UsersController extends AppController {
 			$this->set('me', true);
 		$request = $this->Module->find('all');
 		$result = array();
+		$subject = array();
+		$z = 0;
 		$this->set('infos', $this->LDAP->find(array('value' => $id, 'attribute' => 'uidNumber')));
 		for ($i = 0; isset($request[$i]); $i++) {
-				/* On parse les inscrits sur les virgules */
 			$tmp = explode(',', $request[$i]['Module']['is_inscrit']);
-
-				// On parcourt tout les inscrits, pour voir sur l'uid est inscrit
 			for ($j = 0; isset($tmp[$j]); $j++) {
-				// Si il est inscrit, on le set pour le passer plus tard a la view
-				if ($id == $tmp[$j])
-					$result[$i] = array(
+				if ($id == $tmp[$j]) {
+
+					$res_subject = $this->Subject->find('all', array('conditions', array('module_id' => $request[$i]['Module']['id'])));
+					for ($v = 0; isset($res_subject[$v]); $v++) {
+
+						$tmp = explode(',', $res_subject[$v]['Subject']['is_inscrit']);
+						for ($j = 0; isset($tmp[$j]); $j++) {
+							if ($id == $tmp[$j]) {
+								$subject[$z++] = $res_subject[$v]['Subject'];
+								break  ;
+							}
+						}
+					}
+				$result[$i] = array(
 						'Name' => $request[$i]['Module']['name'],
 						'Description' => $request[$i]['Module']['description']
-						); 
+					); 
+				}
 			}
 		}
 		$this->set('module', $result);
+		$this->set('subject', $subject);
+
+		/* Gestion des notes */
+
+		$result = array();
+		$note = $this->Note->find('all', array('conditions' => array('e_id' => $id)));
+		for ($i = 0; isset($note[$i]); $i++) {
+			$result[$note[$i]['Note']['subject']] = array();
+			$notes = json_decode($note[$i]['Note']['note'], true);
+			$result[$note[$i]['Note']['subject']]['note'] = $notes;
+		}
+		$this->set('note', $result);
 	}
 }
 
