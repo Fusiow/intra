@@ -18,6 +18,7 @@
 		margin-top: 50px;
 	}
 	.table {
+	margin-top: 10%;
 		border-width: 5px;
 		border-style: solid;
 		width: 100%;
@@ -54,10 +55,6 @@
 	 	<?= 'Téléphone: '.$infos[0]['mobile-phone'][0].''; ?></br> </br>  
 	</div>
 </div>
-</br>
-</br>
-</br>
-</br>
 <table class='table'>
 	<tr>
 		<th>Inscrit au module</th>
@@ -88,7 +85,10 @@
 				echo $note[$id]['note']['note'][$j].", ";
 			}
 			echo "</td>";
-			echo "<td>".$note[$id]['note']['finale_note']."</td>";
+			if (isset($note[$id]['note']['finale_note']))
+				echo "<td>".$note[$id]['note']['finale_note']."</td>";
+			else
+				echo "<td></td>";
 			echo "</tr>";
 		}
 ?>

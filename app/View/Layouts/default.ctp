@@ -106,6 +106,14 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			<ul>
 				<li><i class='icon-user3'></i> Profil <i class='fa fa-chevron-down'></i></li>
 				<li><i class='icon-tree'></i> Modules <i class='fa fa-chevron-down'></i></li>
+				<li>
+				<!--	<ul>
+					<?php
+						foreach($mods as $mod) {
+							echo "<li>".$m;
+						}
+					?>
+					</ul>--></li>
 				<li><i class='icon-bubbles2'></i> Forum <i class='fa fa-chevron-down'></i></li>
 				<li><i class='icon-calendar'></i> Planning <i class='fa fa-chevron-down'></i></li>
 				<li><i class='icon-cog'></i> Parametres <i class='fa fa-chevron-down'></i></li>

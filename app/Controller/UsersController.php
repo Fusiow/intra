@@ -49,9 +49,8 @@ class UsersController extends AppController {
 			for ($j = 0; isset($tmp[$j]); $j++) {
 				if ($id == $tmp[$j]) {
 
-					$res_subject = $this->Subject->find('all', array('conditions', array('module_id' => $request[$i]['Module']['id'])));
+					$res_subject = $this->Subject->find('all', array('conditions' => array('module_id' => $request[$i]['Module']['id']), 'order' => array('id' => 'ASC')));
 					for ($v = 0; isset($res_subject[$v]); $v++) {
-
 						$tmp = explode(',', $res_subject[$v]['Subject']['is_inscrit']);
 						for ($j = 0; isset($tmp[$j]); $j++) {
 							if ($id == $tmp[$j]) {
