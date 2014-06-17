@@ -27,6 +27,10 @@
 	background: rgba(209, 129, 54, 0.16);
 }
 
+.post table {
+	width: 100%;
+}
+
 .post .infos {
 	text-align: right;
 	border-top: 2px solid white;
@@ -44,6 +48,14 @@
 .post .infos img {
 	width: 5%;
 }
+
+.response .vote {
+	width: 2%;
+	font-size: 3em;
+	text-align: center;
+	vertical-align: top;
+}
+
 
 .response .title , .answer .title{
 	font-size: 1.5em;

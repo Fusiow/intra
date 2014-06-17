@@ -104,20 +104,39 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<div class='submenu'>
 			<span class='title'><?= $this->Session->read('LDAP.User.uid'); ?></span>
 			<ul>
-				<li><i class='icon-user3'></i> Profil <i class='fa fa-chevron-down'></i></li>
-				<li><i class='icon-tree'></i> Modules <i class='fa fa-chevron-down'></i></li>
-				<li>
-				<!--	<ul>
-					<?php
+				<li onclick="show_sub('.sub_profile')"><i class='icon-user3'></i> Profil <i class='fa fa-chevron-down'></i></li>
+				<li class='sub_menu sub_profile'>
+					<ul>
+					<a href="/users/profile/<?= $this->Session->read('LDAP.User.uidnumber') ?>"><li>Voir son profil</li></a>
+						<a href="#"><li>Fil d'actualite</li></a>
+					</ul>
+				</li>
+				<li onclick="show_sub('.sub_module')"><i class='icon-tree'></i> Modules <i class='fa fa-chevron-down'></i></li>
+				<li class='sub_menu sub_module'>
+					<ul>
+<?php
 						foreach($mods as $mod) {
-							echo "<li>".$m;
+							echo "<a href='/shows/module/".$mod['Module']['id']."'><li>".$mod['Module']['name']."</li></a>";
 						}
 					?>
-					</ul>--></li>
-				<li><i class='icon-bubbles2'></i> Forum <i class='fa fa-chevron-down'></i></li>
+					</ul>
+				</li>
+				<li onclick="show_sub('.sub_forum')"><i class='icon-bubbles2'></i> Forum <i class='fa fa-chevron-down'></i></li>
+				<li class='sub_menu sub_forum'>
+				<ul><?php
+				foreach($mods as $mod) {
+					echo "<a href='/forums/show/".$mod['Module']['id']."'><li>".$mod['Module']['name']."</li></a>";
+				}
+?>	</ul>
+				</li>
 				<li><i class='icon-calendar'></i> Planning <i class='fa fa-chevron-down'></i></li>
-				<li><i class='icon-cog'></i> Parametres <i class='fa fa-chevron-down'></i></li>
-				
+				<li onclick="show_sub('.sub_param')"><i class='icon-cog'></i> Parametres <i class='fa fa-chevron-down'></i></li>
+				<li class='sub_menu sub_param'>
+					<ul>
+						<a href="#"><li>Modifier</li></a>
+						<a href='/users/logout'><li>Deconnexion</li></a>
+					</ul>
+				</li>
 			</ul>
 		</div>
 		<!-- Menu 

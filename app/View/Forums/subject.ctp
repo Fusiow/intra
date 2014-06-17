@@ -32,6 +32,20 @@
 	<?php
 		for ($i = 0; isset($response[$i]); $i++) {
 			echo "<div class='post'>";
+			echo "<table><tr>";
+			if ($result['type'] == 2) {
+				echo "<td class='vote'>";
+					echo "<i class='fa fa-chevron-up' onclick=\"vote_up('".$response[$i]['Forum_response']['id']."')\"></i></br>";
+					if ($response[$i]['Forum_response']['vote'] > 0)
+						echo "<span style='color: green;'>";
+					else if ($response[$i]['Forum_response']['vote'] < 0)
+						echo "<span style='color: red;'>";
+					echo $response[$i]['Forum_response']['vote']."</br>";
+					echo "</span>";
+					echo "<i class='fa fa-chevron-down' onclick=\"vote_down('".$response[$i]['Forum_response']['id']."')\"></i>";
+				echo "</td>";
+			}
+			echo "<td>";
 				echo "<div class='markdown_txt markdown'>";
 					echo $response[$i]['Forum_response']['text'];
 				echo "</div>";
@@ -42,6 +56,7 @@
 					echo "<img src='data:image/png;base64,".$response[$i]['Forum_response']['picture']."'/>";
 					echo "<span class='name'><a href='/users/profile/".$response[$i]['Forum_response']['author']."'>".$response[$i]['Forum_response']['uid']."</a></span>";
 				echo "</div>";
+			echo "</td></tr></table>";
 			echo "</div>";
 		}
 	?>

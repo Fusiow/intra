@@ -182,12 +182,13 @@ color: #E5E1D1;
 .menu table tr td a {
 	color: rgba(255, 255, 255, 0.60);
 }
+
 /* Content */
 
 #content {
 	padding-top: 5%;
 	background-color: rgba(255, 255, 255, 0.76);
-	height: 100%;
+	min-height: 100%;
 	width: 100%;
 	padding-left: 280px;
 }
@@ -204,6 +205,10 @@ color: #E5E1D1;
 	color: white;
 	position: fixed;
 	padding-left: 1%;
+}
+
+.submenu a {
+	color: white;
 }
 
 .submenu .title {
@@ -231,6 +236,25 @@ color: #E5E1D1;
 
 .submenu ul li i {
 	padding-right: 10%;
+}
+
+.sub_menu {
+	display: none;
+	border: 0;
+}
+
+.sub_menu ul {
+	margin: 0;
+}
+
+.sub_menu ul li {
+	border: 0;
+	transition-property: background;
+	transition-duration: 0.3s;
+}
+
+.sub_menu ul li:hover {
+	background: #545856;
 }
 
 /* Panel Style */

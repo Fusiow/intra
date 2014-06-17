@@ -6,17 +6,47 @@ function isEmpty( el ){
 	return !$.trim(el.html())
 }
 
-function subMenu(attr) {
+function show_sub(attr) {
 	if (g_isclick == 0) {
-		$('.sub_' + attr).show(400);
-		g_isclick = 1;
+		$(attr).slideDown(400);
 		g_actsub = attr;
-	} else if (attr != g_actsub) {
-		$('.sub_' + g_actsub).hide(400);
-		$('.sub_' + attr).show(400);
+		g_isclick = 1;
+	} else if (attr == g_actsub) {
+		$(attr).slideUp(200);
+		g_isclick = 0;
+	} else {
+		$(g_actsub).slideUp(200);
+		$(attr).slideDown(400);
 		g_actsub = attr;
 	}
 }
+
+function vote_up(id) {
+	$.ajax({
+		url: '/forums/vote_up/' + id,
+		success: function(data) {
+		if (data == "OK"){
+				alert("Votre vote a bien ete pris en compte !");
+			} else {
+				alert("Vous avez deja vote !");
+			}
+		}
+	});
+}
+
+function vote_down(id) {
+	$.ajax({
+		url: '/forums/vote_down/' + id,
+		success: function(data) {
+			if (data == "OK"){
+				alert("Votre vote a bien ete pris en compte !");
+			} else {
+				alert("Vous avez deja vote !");
+			}
+		}
+	});
+}
+
 
 $(document).ready(function (){
 	if (!isEmpty($('.message'))) {

@@ -1,30 +1,4 @@
 <div id="forum">
-	<div id="forum_menu">
-		<ul>
-			<li><a href="#">Infographie</a></li>
-			<li><a href="#"onMouseOver="subMenu('unix')">Unix_II</a></li>
-			<li><a href="#" onMouseOver="subMenu('web')">Web_II</a></li>
-			<li class='stretch'></li>
-		</ul>
-		<ul class='sub sub_f sub_web'>
-			<li><a href="#">Framework I</a></li>
-			<li><a href="#">Framework II</a></li>
-			<li><a href="#">Framework III</a></li>
-			<li><a href="#">Gros projet Web</a></li>
-		</ul>
-		<ul class='sub sub_f sub_unix'>
-			<li><a href="#">Malloc</a></li>
-			<li><a href="#">Nm</a></li>
-			<li><a href="#">Ft_script</a></li>
-			<li><a href="#">Philo</a></li>
-			<li><a href="#">Ft_p</a></li>
-			<li><a href="#">Ft_irc</a></li>
-			<li><a href="#">Zappy</a></li>
-			<li><a href="#">Lem-IPC</a></li>
-		</ul>
-
-	<?= $this->Form->input('word', array('placeholder' => 'Search...', 'label' => '', 'required')); ?>
-	</div>
 	<h1>Vos Derniers messages</h1>
 		<table class='question'>
 		<tr>
