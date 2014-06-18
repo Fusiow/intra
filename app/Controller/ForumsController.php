@@ -76,6 +76,7 @@ class ForumsController extends AppController {
 			else
 				$this->request->data['subject']['type'] = '2';
 			$this->Forum->save($this->request->data['subject']);
+			$this->redirect(array('controller' => 'forums', 'action' => 'subject', $this->Forum->getLastInsertID()));
 		}
 	}
 

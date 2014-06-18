@@ -123,7 +123,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 				</li>
 				<li onclick="show_sub('.sub_forum')"><i class='icon-bubbles2'></i> Forum <i class='fa fa-chevron-down'></i></li>
 				<li class='sub_menu sub_forum'>
-				<ul><?php
+				<ul>
+					<a href='/forums/add'><li>Nouveau sujet</li></a>
+				<?php
 				foreach($mods as $mod) {
 					echo "<a href='/forums/show/".$mod['Module']['id']."'><li>".$mod['Module']['name']."</li></a>";
 				}
