@@ -54,6 +54,10 @@ class AppController extends Controller {
 		}
 		if ($this->RequestHandler->isAjax())
 			$this->layout = null;
+		$res = $this->User->find('all', array('conditions' => array('id' => $this->Session->read('LDAP.User.uidnumber'))));
+			if ($res[0]['User']['admin'] == 1)
+				$this->set('admin', true);
+
 	}
 
 	function recordActivity() {
