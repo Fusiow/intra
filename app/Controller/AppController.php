@@ -32,7 +32,7 @@ App::uses('Controller', 'Controller');
 */
 class AppController extends Controller {
 
-	public $uses = array('Module');
+	public $uses = array('Module', 'User');
 
 	public $components = array('Session','Cookie', 'Auth', 'RequestHandler', 'LDAP' => array(
 		'host' => 'ldap.42.fr',

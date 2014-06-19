@@ -40,6 +40,7 @@ echo $this->Html->css('markdown');
 echo $this->Html->css('toggle');
 echo $this->Html->css('subject');
 echo $this->Html->css('dark');
+echo $this->Html->css('ticket');
 echo $this->Html->css('//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
 
 /* Enlever le menu style de la page login */
@@ -136,6 +137,7 @@ foreach($mods as $mod) {
 				<li onclick="show_sub('.sub_param')"><i class='icon-cog'></i> Parametres <i class='fa fa-chevron-down'></i></li>
 				<li class='sub_menu sub_param'>
 					<ul>
+						<a href='/tickets/'><li>Tickets</li></a>
 						<a href="#"><li>Modifier</li></a>
 						<a href='/users/logout'><li>Deconnexion</li></a>
 					</ul>
