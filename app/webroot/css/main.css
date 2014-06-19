@@ -331,3 +331,25 @@ form input[type = "text"], form input[type = "password"] {
 	border: 2px solid  #CBC8BD;
 }
 
+.pic img{
+	width: 100%;
+}
+
+.search {
+	text-align: left;
+	border-collapse: collapse;
+}
+
+.search tr td {
+	width: auto;
+	border-bottom: 1px solid #bfbfbf;
+}
+
+.search tr .pic {
+	width: 10%;
+}
+
+#search_result {
+	width: 170px;
+	border-top: 2px solid #bfbfbf;
+}

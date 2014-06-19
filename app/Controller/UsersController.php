@@ -3,7 +3,7 @@ App::uses('AuthComponent', 'Controller/Component');
 
 class UsersController extends AppController {
 
-	public $uses = array('Module', 'Note', 'Subject');
+	public $uses = array('Module', 'Note', 'Subject', 'User');
 	/*
 	** Class for User control, LDAP connexion and ressources
 	*/
@@ -80,6 +80,10 @@ class UsersController extends AppController {
 			$result[$note[$i]['Note']['subject']]['note'] = $notes;
 		}
 		$this->set('note', $result);
+	}
+
+	public function search($uid) {
+		$this->set('result', $this->User->find('all', array('conditions' => array('uid LIKE' => $uid.'%'))));
 	}
 }
 

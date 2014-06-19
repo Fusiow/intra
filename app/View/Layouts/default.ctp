@@ -73,7 +73,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 						<h1>INTRA</h1>
 					</td>
 					<td>
-						<input type="text" placeholder="Search..."/>
+						<input id='search' type="text" placeholder="Search..."/>
 						<button type="submit"><i class="fa fa-search"></i></button>
 					</td>
 				</tr>
@@ -140,6 +140,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 					</ul>
 				</li>
 			</ul>
+			<div id="search_result">
+
+			</div>
 		</div>
 		<!-- Menu 
 			<div id='menu'>

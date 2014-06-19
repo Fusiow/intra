@@ -77,6 +77,22 @@ $(document).ready(function (){
 		hljs.highlightBlock($('#result pre code')[0], ' ', false);
 	});
 
+	$("#search").on('keyup', function() {
+		if ($("#search").val()) {
+			$.ajax({
+				url: '/users/search/' + $("#search").val(),
+				beforeSend: function() {
+					$("#search_result").empty().append("<img src='http://ajaxload.info/cache/FF/FF/FF/00/00/00/25-1.gif'/>");
+				},
+				success: function(data) {
+					$("#search_result").empty().append(data);
+				}
+			});
+		} else {
+			$("#search_result").empty();
+		}
+	});
+
 	$('#category').change(function(){
 		$('#category option:selected').each(function() {
 			$.ajax({
