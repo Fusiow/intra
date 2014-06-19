@@ -73,8 +73,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 						<h1>INTRA</h1>
 					</td>
 					<td>
-						<input id='search' type="text" placeholder="Search..."/>
-						<button type="submit"><i class="fa fa-search"></i></button>
+						<?= $this->Form->create('Lulz', array('url' => array('controller' => 'users', 'action' => 'search'))); ?>
+						<?= $this->Form->input('search', array('placeholder' => 'Search...', 'id' => "search", 'label' => '')); ?>
+						</form>
 					</td>
 				</tr>
 			</table>

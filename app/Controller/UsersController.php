@@ -82,8 +82,14 @@ class UsersController extends AppController {
 		$this->set('note', $result);
 	}
 
-	public function search($uid) {
-		$this->set('result', $this->User->find('all', array('conditions' => array('uid LIKE' => $uid.'%'))));
+	public function search() {
+		if ($this->request->is('post')) {
+			$uid = $this->request->data['Lulz']['search'];
+			$this->set('result', ($res = $this->User->find('all', array('conditions' => array('uid LIKE' => $uid.'%')))));
+			if (count($res) == 1 && !$this->request->is('ajax')) {
+				$this->redirect(array('controller' => 'users', 'action' => 'profile', $res[0]['User']['id']));
+			}
+		}
 	}
 }
 
