@@ -29,38 +29,38 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<?php echo $cakeDescription ?>
 		<?php echo $title_for_layout; ?>
 	</title>
-	<?php
-		/* Css stylesheet */
-			echo $this->Html->css('icomoon');
-			echo $this->Html->css('home');
-			echo $this->Html->css('forum');
-			echo $this->Html->css('show');
-			echo $this->Html->css('new');
-			echo $this->Html->css('markdown');
-			echo $this->Html->css('toggle');
-			echo $this->Html->css('subject');
-			echo $this->Html->css('dark');
-			echo $this->Html->css('//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+<?php
+	/* Css stylesheet */
+	echo $this->Html->css('icomoon');
+echo $this->Html->css('home');
+echo $this->Html->css('forum');
+echo $this->Html->css('show');
+echo $this->Html->css('new');
+echo $this->Html->css('markdown');
+echo $this->Html->css('toggle');
+echo $this->Html->css('subject');
+echo $this->Html->css('dark');
+echo $this->Html->css('//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
 
-			/* Enlever le menu style de la page login */
-				if ($title_for_layout == "Login")
-					echo $this->Html->css('login');
-				else
-					echo $this->Html->css('main');
+/* Enlever le menu style de la page login */
+if ($title_for_layout == "Login")
+	echo $this->Html->css('login');
+else
+	echo $this->Html->css('main');
 
-		/* Js scripts */
-			echo $this->Html->script('http://code.jquery.com/jquery-1.9.0.js');
-			echo $this->Html->script('http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js');
-			echo $this->Html->script('toggles.min');
-			echo $this->Html->script('main');
-			echo $this->Html->script('showdown');
-			echo $this->Html->script('highlight.pack');
-		
+/* Js scripts */
+echo $this->Html->script('http://code.jquery.com/jquery-1.9.0.js');
+echo $this->Html->script('http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js');
+echo $this->Html->script('toggles.min');
+echo $this->Html->script('main');
+echo $this->Html->script('showdown');
+echo $this->Html->script('highlight.pack');
 
-		echo $this->fetch('meta');
-		echo $this->fetch('css');
-		echo $this->fetch('script');
-	?>
+
+echo $this->fetch('meta');
+echo $this->fetch('css');
+echo $this->fetch('script');
+?>
 </head>
 <body>
 	<?= $this->Session->flash() ?>
@@ -116,20 +116,20 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 				<li class='sub_menu sub_module'>
 					<ul>
 <?php
-						foreach($mods as $mod) {
-							echo "<a href='/shows/module/".$mod['Module']['id']."'><li>".$mod['Module']['name']."</li></a>";
-						}
-					?>
+foreach($mods as $mod) {
+	echo "<a href='/shows/module/".$mod['Module']['id']."'><li>".$mod['Module']['name']."</li></a>";
+}
+?>
 					</ul>
 				</li>
 				<li onclick="show_sub('.sub_forum')"><i class='icon-bubbles2'></i> Forum <i class='fa fa-chevron-down'></i></li>
 				<li class='sub_menu sub_forum'>
 				<ul>
 					<a href='/forums/add'><li>Nouveau sujet</li></a>
-				<?php
-				foreach($mods as $mod) {
-					echo "<a href='/forums/show/".$mod['Module']['id']."'><li>".$mod['Module']['name']."</li></a>";
-				}
+<?php
+foreach($mods as $mod) {
+	echo "<a href='/forums/show/".$mod['Module']['id']."'><li>".$mod['Module']['name']."</li></a>";
+}
 ?>	</ul>
 				</li>
 				<li><i class='icon-calendar'></i> Planning <i class='fa fa-chevron-down'></i></li>
@@ -140,7 +140,17 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 						<a href='/users/logout'><li>Deconnexion</li></a>
 					</ul>
 				</li>
-			</ul>
+<?php
+if (isset($admin)) {
+	echo "<li onclick=\"show_sub('.sub_admin')\"><i class='icon-user4'></i> Admin <i class='fa fa-chevron-down'></i></li>
+	<li class='sub_menu sub_admin'>
+	<ul>
+	<a href=\"/admin\"><li>Accueil</li></a>
+	<a href=\"#\"><li>Creer un module</li></a>
+	</ul>
+	</li>";
+}
+?>
 			<div id="search_result">
 
 			</div>
@@ -162,11 +172,11 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<li><a href="/users/logout"><i class='icon-switch'></i>Deconnexion</a></li>
 </ul>
 <ul class='sub sub_module'>
-	<?php
-		foreach ($mods as $mod) {
-			echo "<li><a href='/Shows/module/".$mod['Module']['id']."''>".$mod['Module']['name']."</a></li>";
-		}
-	?>
+<?php
+foreach ($mods as $mod) {
+	echo "<li><a href='/Shows/module/".$mod['Module']['id']."''>".$mod['Module']['name']."</a></li>";
+}
+?>
 </ul>
 </div>-->
 	</header>
