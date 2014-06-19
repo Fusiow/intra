@@ -35,7 +35,7 @@ class PagesController extends AppController {
  *
  * @var array
  */
-	public $uses = array('Module');
+	public $uses = array('Module', 'User');
 
 /**
  * Displays a view
@@ -67,6 +67,9 @@ class PagesController extends AppController {
 		}
 		$this->set(compact('page', 'subpage', 'title_for_layout'));
 
+		$res = $this->User->find('all', array('conditions' => array('id' => $this->Session->read('LDAP.User.uidnumber'))));
+		if ($res[0]['User']['admin'] == 1)
+			$this->set('admin', true);
 		try {
 			$this->render(implode('/', $path));
 		} catch (MissingViewException $e) {
