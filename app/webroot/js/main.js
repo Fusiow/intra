@@ -21,6 +21,20 @@ function show_sub(attr) {
 	}
 }
 
+function show_sub2(attr) {
+	if (g_isclick == 0) {
+		$(attr).slideDown(400);
+		g_actsub = attr;
+		g_isclick = 1;
+	} else if (attr == g_actsub) {
+	} else {
+		$(g_actsub).slideUp(200);
+		$(attr).slideDown(400);
+		g_actsub = attr;
+	}
+}
+
+
 function vote_up(id) {
 	$.ajax({
 		url: '/forums/vote_up/' + id,

@@ -129,7 +129,8 @@ if (isset($admin)) {
 	<li class='sub_menu sub_admin'>
 	<ul>
 	<a href=\"/admin\"><li>Accueil</li></a>
-	<a href=\"/admins/create_module\"><li>Creer un module</li></a>
+	<a href=\"/admins/create_module\"><li>Creer un Module</li></a>
+	<a href=\"/admins/create_subject\"><li>Creer un Sujet</li></a>
 	</ul>
 	</li>";
 }
