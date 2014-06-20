@@ -69,7 +69,7 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'root',
-		'password' => 'password',
+		'password' => 'amadeus',
 		'database' => 'intra',
 		'prefix' => '',
 		//'encoding' => 'utf8',

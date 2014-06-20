@@ -38,11 +38,12 @@ input[type = "submit"] {
 }
 
 form select {
+	border: 1px solid #bfbfbf;
+	margin-top: 1%;
 	background: url(favicon.ico) no-repeat 96% white;
 	padding: 5px;
 	color: rgb(151, 42, 0);
 	line-height: 1;
-	border: 0;
 	width: 150px;
 	border-radius: 0;
 	height: 35px;

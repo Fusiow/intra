@@ -720,3 +720,1039 @@ Stack Trace:
 #3 /Volumes/Data/nfs/zfs-student-3/users/2013/lsolofri/mamp/apps/intra/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-06-13 06:50:07 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1049] Unknown database \'intra\'',
+  'enabled' => true,
+)
+Request URL: /Users/login?omg=
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/Model.php(3479): ConnectionManager::getDataSource('default')
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/Model.php(1128): Model->setDataSource('default')
+#4 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/Model.php(3501): Model->setSource('modules')
+#5 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/Model.php(2905): Model->getDataSource()
+#6 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/Model.php(2877): Model->_readDataSource('all', Array)
+#7 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/Controller/AppController.php(93): Model->find('all')
+#8 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#9 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Event/CakeEventManager.php(244): call_user_func(Array, Object(CakeEvent))
+#10 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(927): CakeEventManager->dispatch(Object(CakeEvent))
+#11 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#12 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-06-13 06:50:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 06:50:07 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1049] Unknown database \'intra\'',
+  'enabled' => true,
+)
+Request URL: /Users/login?omg=
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/Model.php(3479): ConnectionManager::getDataSource('default')
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/Model.php(1128): Model->setDataSource('default')
+#4 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/Model.php(3501): Model->setSource('modules')
+#5 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/Model.php(2905): Model->getDataSource()
+#6 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/Model.php(2877): Model->_readDataSource('all', Array)
+#7 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/Controller/AppController.php(93): Model->find('all')
+#8 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#9 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Event/CakeEventManager.php(244): call_user_func(Array, Object(CakeEvent))
+#10 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(927): CakeEventManager->dispatch(Object(CakeEvent))
+#11 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#12 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-06-13 06:50:47 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1049] Unknown database \'intra\'',
+  'enabled' => true,
+)
+Request URL: /Users/login?omg=
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/Model.php(3479): ConnectionManager::getDataSource('default')
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/Model.php(1128): Model->setDataSource('default')
+#4 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/Model.php(3501): Model->setSource('modules')
+#5 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/Model.php(2905): Model->getDataSource()
+#6 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/Model.php(2877): Model->_readDataSource('all', Array)
+#7 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/Controller/AppController.php(93): Model->find('all')
+#8 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#9 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Event/CakeEventManager.php(244): call_user_func(Array, Object(CakeEvent))
+#10 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(927): CakeEventManager->dispatch(Object(CakeEvent))
+#11 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#12 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-06-13 06:50:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-13 06:50:47 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1049] Unknown database \'intra\'',
+  'enabled' => true,
+)
+Request URL: /Users/login?omg=
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/Model.php(3479): ConnectionManager::getDataSource('default')
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/Model.php(1128): Model->setDataSource('default')
+#4 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/Model.php(3501): Model->setSource('modules')
+#5 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/Model.php(2905): Model->getDataSource()
+#6 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Model/Model.php(2877): Model->_readDataSource('all', Array)
+#7 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/Controller/AppController.php(93): Model->find('all')
+#8 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#9 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Event/CakeEventManager.php(244): call_user_func(Array, Object(CakeEvent))
+#10 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(927): CakeEventManager->dispatch(Object(CakeEvent))
+#11 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#12 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-06-13 07:27:55 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/View/Admin/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/View/Admin/index.ctp',
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-13 09:26:40 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/View/Admin/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/View/Admin/index.ctp',
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-13 09:28:00 Error: [MissingActionException] Action PagesController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_index',
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-13 09:28:21 Error: [MissingActionException] Action PagesController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_index',
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-13 09:28:22 Error: [MissingActionException] Action PagesController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_index',
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-13 09:28:22 Error: [MissingActionException] Action PagesController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_index',
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-14 08:01:28 Error: [MissingActionException] Action PagesController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_index',
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-14 08:12:48 Error: [MissingActionException] Action PagesController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_index',
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-14 09:40:54 Error: [MissingActionException] Action PagesController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_index',
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-14 10:00:08 Error: [MissingActionException] Action PagesController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_index',
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-14 10:39:18 Error: [MissingActionException] Action PagesController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_index',
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-14 10:41:27 Error: [MissingActionException] Action AdminsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminsController',
+  'action' => 'index',
+)
+Request URL: /admins
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest))
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-14 10:41:51 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/Controller/AdminsController.php, line 6]
+2014-06-14 10:41:51 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /admins
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Volumes/Data/n...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Volumes/Data/n...', 6, Array)
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Volumes/Data/n...', 6, Array)
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-14 10:42:18 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/View/Admins/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/View/Admins/index.ctp',
+)
+Request URL: /admins
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-14 10:42:37 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/View/Admins/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/View/Admins/index.ctp',
+)
+Request URL: /admins
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-14 10:44:09 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/View/Admins/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/View/Admins/index.ctp',
+)
+Request URL: /admins
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-14 10:44:45 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/View/Admins/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/View/Admins/index.ctp',
+)
+Request URL: /admins
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-14 10:45:15 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/View/Admins/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/View/Admins/index.ctp',
+)
+Request URL: /admins
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-14 10:47:07 Error: [MissingViewException] View file "/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/View/Admins/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/View/Admins/index.ctp',
+)
+Request URL: /admins
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest))
+#4 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-18 17:05:23 Error: [MissingActionException] Action PagesController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_index',
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-18 17:05:58 Error: [MissingActionException] Action PagesController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_index',
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-18 17:06:00 Error: [MissingActionException] Action PagesController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_index',
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-18 17:06:43 Error: [MissingActionException] Action PagesController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_index',
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-18 17:23:20 Error: [MissingActionException] Action PagesController::admin_display() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_display',
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-18 17:23:56 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 31701858 bytes) in [/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php, line 952]
+2014-06-18 17:23:56 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 31701858 bytes)
+Request URL: /users/search/
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/Volumes/Data/n...', 952)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/Volumes/Data/n...', 952, Array)
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/Volumes/Data/n...', 952, Array)
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-18 17:27:20 Error: [MissingActionException] Action PagesController::admin_display() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_display',
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-18 17:27:23 Error: [MissingActionException] Action PagesController::admin_display() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_display',
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-18 17:33:22 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 17:34:11 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 17:34:13 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 17:34:58 Error: [MissingActionException] Action AdminController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'index',
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-18 20:38:39 Error: [MissingHelperException] Helper class UserHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserHelper',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('User')
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(838): HelperCollection->__isset('User')
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/View/Layouts/default.ctp(101): View->__get('User')
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(949): include('/Volumes/Data/n...')
+#4 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(911): View->_evaluate('/Volumes/Data/n...', Array)
+#5 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(542): View->_render('/Volumes/Data/n...')
+#6 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(479): View->renderLayout('', 'default')
+#7 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(954): View->render('home', NULL)
+#8 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/Controller/PagesController.php(71): Controller->render('home')
+#9 [internal function]: PagesController->display('home')
+#10 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-06-18 20:38:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 20:39:49 Error: [MissingHelperException] Helper class UserHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserHelper',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('User')
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(838): HelperCollection->__isset('User')
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/View/Layouts/default.ctp(101): View->__get('User')
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(949): include('/Volumes/Data/n...')
+#4 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(911): View->_evaluate('/Volumes/Data/n...', Array)
+#5 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(542): View->_render('/Volumes/Data/n...')
+#6 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(479): View->renderLayout('', 'default')
+#7 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(954): View->render('home', NULL)
+#8 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/Controller/PagesController.php(71): Controller->render('home')
+#9 [internal function]: PagesController->display('home')
+#10 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-06-18 20:39:55 Error: [MissingHelperException] Helper class UserHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserHelper',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('User')
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(838): HelperCollection->__isset('User')
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/View/Layouts/default.ctp(101): View->__get('User')
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(949): include('/Volumes/Data/n...')
+#4 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(911): View->_evaluate('/Volumes/Data/n...', Array)
+#5 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(542): View->_render('/Volumes/Data/n...')
+#6 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(479): View->renderLayout('', 'default')
+#7 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(954): View->render('home', NULL)
+#8 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/Controller/PagesController.php(71): Controller->render('home')
+#9 [internal function]: PagesController->display('home')
+#10 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-06-18 20:39:56 Error: [MissingHelperException] Helper class UserHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserHelper',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('User')
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(838): HelperCollection->__isset('User')
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/View/Layouts/default.ctp(101): View->__get('User')
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(949): include('/Volumes/Data/n...')
+#4 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(911): View->_evaluate('/Volumes/Data/n...', Array)
+#5 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(542): View->_render('/Volumes/Data/n...')
+#6 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(479): View->renderLayout('', 'default')
+#7 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(954): View->render('home', NULL)
+#8 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/Controller/PagesController.php(71): Controller->render('home')
+#9 [internal function]: PagesController->display('home')
+#10 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-06-18 20:41:22 Error: [MissingHelperException] Helper class UserHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserHelper',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('User')
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(838): HelperCollection->__isset('User')
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/View/Layouts/default.ctp(101): View->__get('User')
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(949): include('/Volumes/Data/n...')
+#4 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(911): View->_evaluate('/Volumes/Data/n...', Array)
+#5 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(542): View->_render('/Volumes/Data/n...')
+#6 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(479): View->renderLayout('', 'default')
+#7 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(954): View->render('home', NULL)
+#8 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/Controller/PagesController.php(71): Controller->render('home')
+#9 [internal function]: PagesController->display('home')
+#10 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-06-18 20:41:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 20:41:30 Error: [MissingHelperException] Helper class UserHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserHelper',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('User')
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(838): HelperCollection->__isset('User')
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/View/Layouts/default.ctp(101): View->__get('User')
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(949): include('/Volumes/Data/n...')
+#4 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(911): View->_evaluate('/Volumes/Data/n...', Array)
+#5 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(542): View->_render('/Volumes/Data/n...')
+#6 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(479): View->renderLayout('', 'default')
+#7 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(954): View->render('home', NULL)
+#8 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/Controller/PagesController.php(71): Controller->render('home')
+#9 [internal function]: PagesController->display('home')
+#10 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-06-18 20:41:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 20:44:04 Error: [MissingHelperException] Helper class UserHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserHelper',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('User')
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(838): HelperCollection->__isset('User')
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/View/Layouts/default.ctp(101): View->__get('User')
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(949): include('/Volumes/Data/n...')
+#4 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(911): View->_evaluate('/Volumes/Data/n...', Array)
+#5 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(542): View->_render('/Volumes/Data/n...')
+#6 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(479): View->renderLayout('', 'default')
+#7 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(954): View->render('home', NULL)
+#8 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/Controller/PagesController.php(71): Controller->render('home')
+#9 [internal function]: PagesController->display('home')
+#10 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-06-18 20:44:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 20:44:11 Error: [MissingHelperException] Helper class UserHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserHelper',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('User')
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(838): HelperCollection->__isset('User')
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/View/Layouts/default.ctp(101): View->__get('User')
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(949): include('/Volumes/Data/n...')
+#4 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(911): View->_evaluate('/Volumes/Data/n...', Array)
+#5 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(542): View->_render('/Volumes/Data/n...')
+#6 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(479): View->renderLayout('', 'default')
+#7 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(954): View->render('home', NULL)
+#8 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/Controller/PagesController.php(71): Controller->render('home')
+#9 [internal function]: PagesController->display('home')
+#10 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-06-18 20:44:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 20:44:28 Error: [MissingHelperException] Helper class UserHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserHelper',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('User')
+#1 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(838): HelperCollection->__isset('User')
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/View/Layouts/default.ctp(101): View->__get('User')
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(949): include('/Volumes/Data/n...')
+#4 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(911): View->_evaluate('/Volumes/Data/n...', Array)
+#5 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(542): View->_render('/Volumes/Data/n...')
+#6 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/View/View.php(479): View->renderLayout('', 'default')
+#7 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(954): View->render('home', NULL)
+#8 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/Controller/PagesController.php(71): Controller->render('home')
+#9 [internal function]: PagesController->display('home')
+#10 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-06-18 20:44:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 20:46:30 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/Controller/PagesController.php, line 70]
+2014-06-18 20:46:30 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Volumes/Data/n...', 70)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Volumes/Data/n...', 70, Array)
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Volumes/Data/n...', 70, Array)
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-18 20:53:21 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 21:11:37 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 21:15:31 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 21:16:17 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 21:16:34 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 21:17:27 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 21:18:00 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 21:20:21 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 21:20:22 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 21:21:21 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 21:24:56 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 21:24:57 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 21:24:57 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 21:24:57 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 21:24:57 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 21:24:57 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 21:29:54 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 21:54:52 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 21:54:52 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/Controller/AppController.php, line 57]
+2014-06-18 21:54:52 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Volumes/Data/n...', 57)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Volumes/Data/n...', 57, Array)
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Volumes/Data/n...', 57, Array)
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-18 22:13:04 Error: [MissingControllerException] Controller class CreateModuleController could not be found.
+Exception Attributes: array (
+  'class' => 'CreateModuleController',
+  'plugin' => NULL,
+)
+Request URL: /create_module
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 22:13:04 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/Controller/AppController.php, line 57]
+2014-06-18 22:13:04 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /create_module
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Volumes/Data/n...', 57)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Volumes/Data/n...', 57, Array)
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Volumes/Data/n...', 57, Array)
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-18 22:13:29 Error: [MissingControllerException] Controller class CreateModuleController could not be found.
+Exception Attributes: array (
+  'class' => 'CreateModuleController',
+  'plugin' => NULL,
+)
+Request URL: /create_module
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 22:13:29 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/Controller/AppController.php, line 57]
+2014-06-18 22:13:29 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /create_module
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Volumes/Data/n...', 57)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Volumes/Data/n...', 57, Array)
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Volumes/Data/n...', 57, Array)
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-18 22:13:33 Error: [MissingControllerException] Controller class CreateModuleController could not be found.
+Exception Attributes: array (
+  'class' => 'CreateModuleController',
+  'plugin' => NULL,
+)
+Request URL: /create_module
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 22:13:33 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/Controller/AppController.php, line 57]
+2014-06-18 22:13:33 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /create_module
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Volumes/Data/n...', 57)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Volumes/Data/n...', 57, Array)
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Volumes/Data/n...', 57, Array)
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-18 22:13:38 Error: [MissingControllerException] Controller class CreateModuleController could not be found.
+Exception Attributes: array (
+  'class' => 'CreateModuleController',
+  'plugin' => NULL,
+)
+Request URL: /admin/create_module
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 22:13:38 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/Controller/AppController.php, line 57]
+2014-06-18 22:13:38 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /admin/create_module
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Volumes/Data/n...', 57)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Volumes/Data/n...', 57, Array)
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Volumes/Data/n...', 57, Array)
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-18 22:13:40 Error: [MissingControllerException] Controller class CreateModuleController could not be found.
+Exception Attributes: array (
+  'class' => 'CreateModuleController',
+  'plugin' => NULL,
+)
+Request URL: /admin/create_module
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 22:13:40 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/Controller/AppController.php, line 57]
+2014-06-18 22:13:40 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /admin/create_module
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Volumes/Data/n...', 57)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Volumes/Data/n...', 57, Array)
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Volumes/Data/n...', 57, Array)
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-18 22:14:35 Error: [MissingControllerException] Controller class CreateModuleController could not be found.
+Exception Attributes: array (
+  'class' => 'CreateModuleController',
+  'plugin' => NULL,
+)
+Request URL: /create_module
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 22:14:35 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/Controller/AppController.php, line 57]
+2014-06-18 22:14:35 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /create_module
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Volumes/Data/n...', 57)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Volumes/Data/n...', 57, Array)
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Volumes/Data/n...', 57, Array)
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-18 22:15:30 Error: [MissingControllerException] Controller class CreateModuleController could not be found.
+Exception Attributes: array (
+  'class' => 'CreateModuleController',
+  'plugin' => NULL,
+)
+Request URL: /create_module
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 22:15:30 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/Controller/AppController.php, line 57]
+2014-06-18 22:15:30 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /create_module
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Volumes/Data/n...', 57)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Volumes/Data/n...', 57, Array)
+#2 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Volumes/Data/n...', 57, Array)
+#3 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-18 22:16:39 Error: [MissingControllerException] Controller class CreateModuleController could not be found.
+Exception Attributes: array (
+  'class' => 'CreateModuleController',
+  'plugin' => NULL,
+)
+Request URL: /create_module
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-18 22:16:47 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /admin
+Stack Trace:
+#0 /Volumes/Data/nfs/zfs-student-4/users/2013/rkharif/mamp/apps/j04/htdocs/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

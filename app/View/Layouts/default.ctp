@@ -31,9 +31,10 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	</title>
 <?php
 	/* Css stylesheet */
-	echo $this->Html->css('icomoon');
+echo $this->Html->css('icomoon');
 echo $this->Html->css('home');
 echo $this->Html->css('forum');
+echo $this->Html->css('admin');
 echo $this->Html->css('show');
 echo $this->Html->css('new');
 echo $this->Html->css('markdown');
@@ -146,7 +147,7 @@ if (isset($admin)) {
 	<li class='sub_menu sub_admin'>
 	<ul>
 	<a href=\"/admin\"><li>Accueil</li></a>
-	<a href=\"#\"><li>Creer un module</li></a>
+	<a href=\"/admins/create_module\"><li>Creer un module</li></a>
 	</ul>
 	</li>";
 }
