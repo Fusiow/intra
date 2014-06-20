@@ -41,6 +41,7 @@ echo $this->Html->css('markdown');
 echo $this->Html->css('toggle');
 echo $this->Html->css('subject');
 echo $this->Html->css('dark');
+echo $this->Html->css('ticket');
 echo $this->Html->css('//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
 
 /* Enlever le menu style de la page login */
@@ -83,24 +84,12 @@ echo $this->fetch('script');
 		</div>
 		<div class='menu'>
 			<table>
-				<tr>
-					<td><a href='/'><i class='icon-home'></i></a></td>
-				</tr>
-				<tr>
-				<td><a href='/users/profile/<?= $this->Session->read('LDAP.User.uidnumber') ?>'<i class='icon-user3'></i></td>
-				</tr>
-				<tr>
-					<td><a href='#'><i class='icon-tree'></i></a></td>
-				</tr>
-				<tr>
-					<td><a href='/forums'><i class='icon-bubbles2'></i></a></td>
-				</tr>
-				<tr>
-					<td><a href='#'><i class='icon-calendar'></i></a></td>
-				</tr>
-				<tr>
-					<td><a href='#'><i class='icon-cog'></i></a></td>
-				</tr>
+				<tr><td><a href='/'><i class='icon-home'></i></a></td></tr>
+				<tr><td onMouseOver="show_sub2('.sub_profile')"><a href='/users/profile/<?= $this->Session->read('LDAP.User.uidnumber') ?>'<i class='icon-user3'></i></td></tr>
+				<tr><td onMouseOver="show_sub2('.sub_module')"><a href='#'><i class='icon-tree'></i></a></td></tr>
+				<tr><td onMouseOver="show_sub2('.sub_forum')"><a href='/forums'><i class='icon-bubbles2'></i></a></td></tr>
+				<tr><td><a href='#'><i class='icon-calendar'></i></a></td></tr>
+				<tr><td onMouseOver="show_sub2('.sub_param')"><a href='#'><i class='icon-cog'></i></a></td></tr>
 			</table>
 		</div>
 		<div class='submenu'>
@@ -134,13 +123,6 @@ foreach($mods as $mod) {
 ?>	</ul>
 				</li>
 				<li><i class='icon-calendar'></i> Planning <i class='fa fa-chevron-down'></i></li>
-				<li onclick="show_sub('.sub_param')"><i class='icon-cog'></i> Parametres <i class='fa fa-chevron-down'></i></li>
-				<li class='sub_menu sub_param'>
-					<ul>
-						<a href="#"><li>Modifier</li></a>
-						<a href='/users/logout'><li>Deconnexion</li></a>
-					</ul>
-				</li>
 <?php
 if (isset($admin)) {
 	echo "<li onclick=\"show_sub('.sub_admin')\"><i class='icon-user4'></i> Admin <i class='fa fa-chevron-down'></i></li>
@@ -152,6 +134,15 @@ if (isset($admin)) {
 	</li>";
 }
 ?>
+
+				<li onclick="show_sub('.sub_param')"><i class='icon-cog'></i> Parametres <i class='fa fa-chevron-down'></i></li>
+				<li class='sub_menu sub_param'>
+					<ul>
+						<a href='/tickets/'><li>Tickets</li></a>
+						<a href="#"><li>Modifier</li></a>
+						<a href='/users/logout'><li>Deconnexion</li></a>
+					</ul>
+				</li>
 			<div id="search_result">
 
 			</div>

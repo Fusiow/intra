@@ -1,0 +1,44 @@
+.ticket {
+	border-collapse: collapse;
+	width: 60%;
+	margin-left: 20%;
+}
+
+.ticket tr td {
+	border-bottom: 1px solid #bfbfbf;
+}
+
+.low {
+	background: rgba(0, 128, 0, 0.35);
+}
+
+.middle {
+	background-color: rgba(255, 165, 0, 0.36);
+}
+
+.high {
+	background-color: rgba(255, 0, 0, 0.4);
+}
+
+.ticket_post {
+	background: white;
+	border: 1px solid #bfbfbf;
+	margin-right: 5%;
+	margin-top: 2%;
+}
+
+.ticket_post h3 {
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.ticket_post p {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	border-left: 2px solid #bfbfbf;
+	padding-left: 2%;
+	margin-left: 1%;
+}
+
+.ticket_origin {
+	border: 3px solid #bfbfbf;
+}
