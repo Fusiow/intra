@@ -57,6 +57,7 @@ echo $this->Html->script('toggles.min');
 echo $this->Html->script('main');
 echo $this->Html->script('showdown');
 echo $this->Html->script('highlight.pack');
+echo $this->Html->script('chart');
 
 
 echo $this->fetch('meta');

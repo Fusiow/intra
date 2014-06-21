@@ -1,6 +1,6 @@
 <h1>Creation d'un Sujet</h1><br/>
 <?php
-	echo $this->Form->create('subject');
+	echo $this->Form->create('subject', array('type' => 'file'));
 	echo $this->Form->input('name', array('placeholder' => 'Titre', 'label' => ''));
 	echo $this->Form->input('description', array('type' => 'textarea', 'placeholder' => 'Description du sujet', 'label' => '',  'rows' => '5', 'cols' => '50'));
 	echo $this->Form->input('restriction', array('placeholder' => 'Nombre de place', 'label' => '', 'type' => 'number'));
@@ -8,7 +8,7 @@
 				<tr>
 					<td><label>Date d\'inscription du: </label><input type="date" name="data[subject][date_insc_beg]"><label> au: </label><input type="date" name="data[subject][date_insc_end]"></td>
 				</tr>';
-	echo '<tr><td><label>Date du module du: </label><input type="date" name="data[subject][date_begin]"><label> au: </label><input type="date" name="data[subject][date_end]"></td></tr>';
+	echo '<tr><td><label>Date du sujet du: </label><input type="date" name="data[subject][date_begin]"><label> au: </label><input type="date" name="data[subject][date_end]"></td></tr>';
 	
 	echo '<tr><td><label for="data[subject][hour_begin]">Heure de debut</label><input type="time" name="data[subject][hour_begin]" />';
 	echo '<label for="data[subject][hour_end]"> Heure de fin</label><input type="time" name="data[subject][hour_end]" /></td></tr></table>';
@@ -30,6 +30,7 @@
 		'options' => array('1' => 'Projet / Examen', "2" => 'TD'),
 		'label' => 'Type :'
 	));
+	echo $this->Form->input('subject_file', array('type' => 'file', 'label' =>'Sujet :'));
 	echo "<br />";
 	echo $this->Form->end('Submit');
 ?>

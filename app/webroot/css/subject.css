@@ -73,3 +73,32 @@
 .response_result {
 	height: 330px !important;
 }
+
+/*
+ * Show subject code
+ */
+
+.show_subject {
+
+}
+
+.show_subject video {
+	width: 34%;
+}
+
+.show_subject .description {
+	float: right;
+	width: 65%;
+}
+
+.show_subject .description h1 {
+	font-size: 3em;
+}
+
+.show_subject iframe {
+	width: 100%;
+	height: 900px;
+}
+
+.show_subject canvas {
+}
