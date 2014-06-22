@@ -74,7 +74,6 @@ for ($i = 0, $date = date("Y-m-d"); $date <= $future; $i++) {
 ?>
 </table>
 </div>
-</div>
 	<div class='parent'>
 	<div id="corrections" class='panel'>
 		<span class='title'>Corrections</span><br />

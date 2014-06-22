@@ -43,6 +43,7 @@ echo $this->Html->css('subject');
 echo $this->Html->css('dark');
 echo $this->Html->css('ticket');
 echo $this->Html->css('planning');
+echo $this->Html->css('profile');
 echo $this->Html->css('//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
 
 /* Enlever le menu style de la page login */

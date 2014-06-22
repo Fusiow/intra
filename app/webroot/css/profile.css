@@ -1,0 +1,14 @@
+.profile .picture {
+	text-align: center;
+	background: url('back/profile.png');
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.profile .name {
+	font-size: 1.6em;
+}
+
+.bold {
+	font-weight: bold;
+}

@@ -1,5 +1,5 @@
 <?php
-	$inscrit = count(explode(',', $result['is_inscrit']));
+	$inscrit = count(explode(',', $result['is_inscrit'])) - 1;
 	$is_inscrit = false;
 	$uid_inscrit = explode(',', $result['is_inscrit']);
 	for ($i = 0; isset($uid_inscrit[$i]); $i++) {
