@@ -43,6 +43,7 @@ class UsersController extends AppController {
 		$result = array();
 		$subject = array();
 		$z = 0;
+		$this->set('user', $this->User->find('all', array('conditions' => array('id' => $id))));
 		$this->set('infos', $this->LDAP->find(array('value' => $id, 'attribute' => 'uidNumber')));
 		for ($i = 0; isset($request[$i]); $i++) {
 			$tmp = explode(',', $request[$i]['Module']['is_inscrit']);
@@ -59,11 +60,7 @@ class UsersController extends AppController {
 							}
 						}
 					}
-				$result[$i] = array(
-						'Name' => $request[$i]['Module']['name'],
-						'Description' => $request[$i]['Module']['description'],
-						'id' => $request[$i]['Module']['id']
-					); 
+				$result[$i] = $request[$i]['Module'];
 				}
 			}
 		}

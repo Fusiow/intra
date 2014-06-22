@@ -8,15 +8,15 @@ function isEmpty( el ){
 
 function show_sub(attr) {
 	if (g_isclick == 0) {
-		$(attr).slideDown(400);
+		$(attr).show(400);
 		g_actsub = attr;
 		g_isclick = 1;
 	} else if (attr == g_actsub) {
-		$(attr).slideUp(200);
+		$(attr).hide(200);
 		g_isclick = 0;
 	} else {
-		$(g_actsub).slideUp(200);
-		$(attr).slideDown(400);
+		$(g_actsub).hide(200);
+		$(attr).show(400);
 		g_actsub = attr;
 	}
 }
@@ -26,7 +26,6 @@ function show_sub2(attr) {
 		$(attr).slideDown(400);
 		g_actsub = attr;
 		g_isclick = 1;
-	} else if (attr == g_actsub) {
 	} else {
 		$(g_actsub).slideUp(200);
 		$(attr).slideDown(400);
