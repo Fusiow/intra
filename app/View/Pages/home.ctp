@@ -83,8 +83,10 @@ for ($i = 0, $date = date("Y-m-d"); $date <= $future; $i++) {
 					$inscrit = explode(',', $act_sub[$i]['subjects']['is_inscrit']);
 					$is_inscrit = 0;
 					for ($j = 0; isset($inscrit[$j]); $j++) {
-						if ($inscrit[$j] == $this->Session->read('LDAP.User.uidnumber'))
-							$is_inscrit = 1; break;
+						if ($inscrit[$j] == $this->Session->read('LDAP.User.uidnumber')) {
+							$is_inscrit = 1; 
+							break;
+						}
 					}
 					if ($is_inscrit == 0)
 						echo "<p>N'oubliez pas de vous inscrire !</p>";

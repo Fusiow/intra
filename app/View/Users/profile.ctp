@@ -8,8 +8,8 @@
 			$credit += $module[$i]['credit'];
 		}
 		for ($i = 0; isset($subject[$i]); $i++) {
-			if (empty($note[$subject[$i]['id']]))
-				$no_note[$subject[$i]] = 1;
+			if ($note[$subject[$i]['id']])
+				$no_note[$subject[$i]['id']] = 1;
 		}
 	?>
 	<div class="picture" >
@@ -92,7 +92,7 @@ Credit en cours: <?= $credit ?><br />
 
 		labels: [<?php
 			for ($i = 0; isset($subject[$i]); $i++) {
-				if ($no_note[$subject[$i]['id']] == 1)
+				if (isset($no_note[$subject[$i]['id']]))
 					echo "\"".$subject[$i]['name']."\"";
 				if (isset($subject[$i + 1]))
 					echo ",";
