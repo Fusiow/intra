@@ -133,7 +133,6 @@ if (isset($admin)) {
 	echo "<li onclick=\"show_sub('.sub_admin')\"><i class='icon-user4'></i> Admin <i class='fa fa-chevron-down'></i></li>
 	<li class='sub_menu sub_admin'>
 	<ul>
-	<a href=\"/admin\"><li>Accueil</li></a>
 	<a href=\"/admins/create_module\"><li>Creer un Module</li></a>
 	<a href=\"/admins/create_subject\"><li>Creer un Sujet</li></a>
 	</ul>
