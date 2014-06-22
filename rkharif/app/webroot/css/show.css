@@ -1,0 +1,39 @@
+.main {
+	background: white;
+}
+
+.main h1 {
+	padding-left: 8%;
+	border-bottom: 2px solid white;
+	margin-left: 2%;
+	margin-right: 25%;
+}
+
+.main .under_title {
+	padding-left: 12%;
+}
+
+.main .under_title h3 {
+	padding-left: 8%;
+	border-bottom: 2px solid white;
+	margin-left: 2%;
+	margin-right: 25%;
+}
+
+
+.under_sub_title table {
+	border-collapse: collapse;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-right: 10%;
+}
+
+.under_sub_title td {
+	border: 1px solid black;
+	text-align: center;
+	width: 20%;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}

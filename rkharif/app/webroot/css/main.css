@@ -1,0 +1,355 @@
+/*
+ * Main css for Intra
+ * Ne02ptzero's Code
+ */
+
+/* Font's Declaration */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+
+@font-face {
+	font-family: 'Title';
+src: url('fonts/BebasNeue.otf');
+}
+
+/* General Declaration */
+
+* {
+	box-sizing: border-box;
+outline: none;
+margin: 0;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+	background-color: #E5E1D1;
+	color:  #52616D;
+	font-family: 'Roboto', sans-serif;
+}
+
+.green-style {
+color: green;
+}
+
+.red-style {
+color: red;
+}
+
+/* Link Style */
+
+a {
+	text-decoration: none;
+	transition-property: color;
+	transition-duration: 0.3s;
+}
+
+/* Menu
+
+#menu {
+	background-color: #2C343B;
+	font-family: 'Title';
+	border-bottom: 3px #52616D solid;
+}
+
+#menu ul {
+	padding-top: 4px;
+	height: 42px;
+		text-align: justify;
+}
+
+#menu ul li {
+display: inline;
+}
+
+#menu ul #last {
+	padding-right: 1%;
+}
+
+#menu ul .stretch {
+display: inline-block;
+width: 100%;
+}
+
+#menu ul li a {
+color: #FFFFFF;
+	   text-decoration: none;
+	   font-size: 2em;
+	   padding-top: 4px;
+	   padding-left: 2%;
+	   padding-right: 2%;
+	   transition-duration: 0.3s;
+	   transition-property: background-color, color;
+}
+
+#menu ul li a:hover {
+	background-color: #52616D;
+color: #E5E1D1;
+}
+
+#menu ul li a i {
+	padding-right: 4px;
+}
+
+#menu ul li a #iconmenu {
+	padding-right: 0;
+}
+
+.sub {
+	font-size: 0.8em;
+	color: #FFFFFF;
+	background-color: #454F58;
+	padding-left: 0.5%;
+	display: none;
+	height: auto;
+	width: auto;
+	padding-left: 2%;
+	padding-right: 2%;
+	transition-duration: 0.3s;
+	transition-property: background-color, color;
+}
+*/
+
+/* Head style */
+
+.head {
+	position: fixed;
+	width: 100%;
+	z-index: 300;
+	background: #1E1E20;
+	min-height: 5%;
+	padding-left: 120px;
+}
+
+.head h1 {
+	font-family: 'Title';
+	color: #FFFFFF;
+	font-size: 3em;
+}
+
+.head table {
+	width: 100%;
+}
+
+.head input[type="text"]{
+	height: 30px;
+	width: 300px;
+}
+
+.head  button {
+	border: 0;
+	height: 30px;
+	width: 30px;
+	margin-left: -1.2%;
+}
+
+/* Menu 2 style */
+
+.menu {
+	z-index: 301;
+	height: 100vh;
+	width: 90px;
+	float: left;
+	font-size: 400%;
+	position: fixed;
+	background-color: #2C343B;
+	border-right: 2px solid rgba(255, 255, 255, 0.22);
+}
+
+.menu table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.menu table tr td {
+	padding-bottom: 4.5vh;
+	padding-top: 4.5vh;
+	padding-left: 10%;
+	padding-right: 10%;
+	transition-property: background-color;
+	transition-duration: 0.3s;
+}
+
+.menu table tr td:hover {
+	background-color: #4C657A;
+}
+
+.menu table tr td a {
+	color: rgba(255, 255, 255, 0.60);
+}
+
+/* Content */
+
+#content {
+	padding-top: 80px;
+	background-color: rgba(255, 255, 255, 0.76);
+	min-height: 100%;
+	width: 100%;
+	padding-left: 280px;
+}
+
+/* SUbmenu style */
+
+.submenu {
+	padding-top: 75px;
+	background: #2A2C2B;
+	height: 100vh;
+	width: 190px;
+	margin-left: 80px;
+	float: left;
+	color: white;
+	position: fixed;
+	padding-left: 1%;
+}
+
+.submenu a {
+	color: white;
+}
+
+.submenu .title {
+	margin-left: 20%;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.submenu ul {
+	padding: 0;
+	margin-top: 10%;
+}
+
+.submenu ul li {
+	list-style: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+	margin-bottom: 4%;
+	padding-left: 5%;
+	padding-bottom: 1%;
+}
+
+.submenu ul li .fa {
+	font-size: 0.2em;
+}
+
+.submenu ul li i {
+	padding-right: 10%;
+}
+
+.sub_menu {
+	display: none;
+	border: 0;
+}
+
+.sub_menu ul {
+	margin: 0;
+}
+
+.sub_menu ul li {
+	border: 0;
+	transition-property: background;
+	transition-duration: 0.3s;
+}
+
+.sub_menu ul li:hover {
+	background: #545856;
+}
+
+/* Panel Style */
+
+.parent {
+	margin-top: 5%;
+}
+
+.parent .panel {
+	background-color: #E5E1D1;
+	min-height: 45%;
+	width: 25%;
+	padding: 1%;
+}
+
+.panel .title {
+	font-size: 2em;
+	border-bottom: 3px solid #F8F7F2;
+	padding-right: 20%;
+}
+
+.panel .sub-title {
+	font-size: 1.5em;
+	margin-left: 5%;
+	margin-top: 3%;
+}
+
+.panel .element {
+	margin-left: 9%;
+	border-left: 2px solid #F8F7F2;
+	padding-left: 3%;
+}
+
+/* Pop-Up style */
+
+.black_overlay {
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index:1001;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);
+}
+
+.white_content {
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	padding: 16px;
+	border: 16px solid #CBC8BD;
+	background-color: white;
+	z-index:1002;
+	overflow: auto;
+}
+
+.white_content .close {
+	float: right;
+}
+
+/* Form style */
+
+form input[type = "text"], form input[type = "password"] {
+	height: 30px;
+	width: 30%;
+	margin-bottom: 0.5%;
+	border: 2px solid  #CBC8BD;
+}
+
+.pic img{
+	width: 100%;
+}
+
+.search {
+	text-align: left;
+	border-collapse: collapse;
+}
+
+.search tr td {
+	width: auto;
+	border-bottom: 1px solid #bfbfbf;
+}
+
+.search tr .pic {
+	width: 10%;
+}
+
+#search_result {
+	width: 170px;
+	border-top: 2px solid #bfbfbf;
+}

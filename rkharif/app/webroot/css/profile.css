@@ -1,0 +1,70 @@
+.profile {
+	background: url('back/profile.png');
+	margin-right: 1%;
+}
+
+.profile .picture {
+	text-align: center;
+	padding-top: 2%;
+	padding-bottom: 4%;
+	border-bottom: 1px solid white;
+}
+
+.profile .picture img {
+	border-radius: 5px;
+}
+
+.profile .name {
+	font-size: 1.6em;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.profile .picture a {
+	color: black;
+	font-size: 1.5em;
+}
+
+.social {
+	float: left;
+	margin-left: 2%;
+}
+
+.profile h1 {
+	margin-left: 5%;
+	margin-right: 5%;
+	border-bottom: 1px solid #bfbfbf;
+}
+
+.module {
+	margin-left: 6%;
+}
+
+.profile table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.profile table th {
+	background: #bfbfbf;
+	color: white;
+}
+
+.td {
+	border-left: 1px solid #bfbfbf;
+	border-right: 1px solid #bfbfbf;
+	border-bottom: 2px solid #bfbfbf;
+	padding-bottom: 1%;
+	padding-top: 1%;
+}
+
+.profile .sub {
+	display: none;
+}
+
+
+.sub_table td {
+	border-right: 1px solid #bfbfbf;
+}

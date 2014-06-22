@@ -1,0 +1,55 @@
+/*
+ * Planning Style
+ * td = each case
+ * class .project = Inscrit
+ * class .noinscription = ...
+ * class .nope = Aucun projet
+ */ 
+
+
+#corrections {
+	float: left;
+}
+
+#news {
+	margin-left: 30%;
+	max-height: 45%;
+	width: 58%;
+}
+
+#news .newglob .member {
+	font-weight: bold;
+}
+
+#news .newglob .action {
+	padding-left: 5%;
+	padding-right: 5%;
+	border-bottom: 3px solid white;
+}
+/* Session Flash (Notification) Style */
+
+.message {
+	position: fixed;
+	background: rgba(255, 0, 0, 0.52);
+	color: rgba(253, 241, 224, 0.87);
+	font-size: 1.7em;
+	margin-top: -0.6%;
+	margin-left: -0.6%;
+	margin-right: -0.6%;
+	padding-left: 1%;
+	padding-top: 0.5%;
+	width: 100%;
+	z-index: 3000;
+}
+
+#sujet {
+	border: 1px solid #bfbfbf;
+	margin-right: 3%;
+	margin-left: 3%;
+	padding-left: 2%;
+}
+
+#sujet h2 {
+	border-bottom: 2px solid #bfbfbf;
+	margin-right: 15%;
+}
