@@ -9,15 +9,15 @@ function isEmpty( el ){
 
 function show_sub(attr) {
 	if (g_isclick == 0) {
-		$(attr).slideDown(400);
+		$(attr).show(400);
 		g_actsub = attr;
 		g_isclick = 1;
 	} else if (attr == g_actsub) {
-		$(attr).slideUp(200);
+		$(attr).hide(200);
 		g_isclick = 0;
 	} else {
-		$(g_actsub).slideUp(200);
-		$(attr).slideDown(400);
+		$(g_actsub).hide(200);
+		$(attr).show(400);
 		g_actsub = attr;
 	}
 }
@@ -27,7 +27,6 @@ function show_sub2(attr) {
 		$(attr).slideDown(400);
 		g_actsub = attr;
 		g_isclick = 1;
-	} else if (attr == g_actsub) {
 	} else {
 		$(g_actsub).slideUp(200);
 		$(attr).slideDown(400);
@@ -83,6 +82,13 @@ $(document).ready(function (){
 			return false;
 		}
 	});
+
+	$("#addbar").on('click', function() {
+		data = "<br /><hr /><br /><div class='input text'><input name='data[subject][corr_title"+i+"]' placeholder='titre' type='text'></div><div><input name='data[subject][corr_instruc"+i+"]' placeholder='consigne' type='text' id='correctionCorrInstruc'></div><div class='input number'><label for='correctionCorrMax'></label><input placeholder='Note maximum' name='data[subject][corr_max"+i+"]' type='number'></div><div><input type='number' placeholder='Num min' name='data[subject][corr_min"+i+"]' ></div>";
+		$("#result_cor").append(data);
+		++i;
+	});
+
 
 	$('.mark').on('keyup', function(){
 		var converter = new Showdown.converter();
