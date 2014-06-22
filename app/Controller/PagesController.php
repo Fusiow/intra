@@ -35,7 +35,7 @@ class PagesController extends AppController {
  *
  * @var array
  */
-	public $uses = array('Module', 'User');
+	public $uses = array('Module', 'User', 'Subject');
 
 /**
  * Displays a view
@@ -48,6 +48,9 @@ class PagesController extends AppController {
 	
 
 	public function display() {
+		$date = date("Y-m-d");
+		$res = $this->Subject->query("SELECT * FROM subjects WHERE date_begin >= '".$date."'");
+		$this->set('sub', $res);
 		$path = func_get_args();
 
 		$count = count($path);

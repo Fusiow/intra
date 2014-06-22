@@ -1,0 +1,48 @@
+.planning .t_planning {
+	width: 95%;
+	border-collapse: collapse;
+}
+
+.planning .t_planning tr td {
+	text-align: right;
+	border: 1px solid #bfbfbf;
+	height: 120px;
+	width: 120px;
+	vertical-align: top;
+	background: white;
+	position: relative;
+}
+
+.planning .t_planning tr td .date {
+	color: rgba(0, 0, 0, 0.38);
+}
+
+.planning .t_planning tr td .events {
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	left: 3%;
+	height: 13px;
+	margin-bottom: 3%;
+}
+
+.circle {
+	height: 13px;
+	width: 13px;
+	border-radius: 7px;
+	box-shadow:inset 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+	float: left;
+	margin-left: 2px;
+}
+
+.sunday {
+	color: rgba(255, 0, 0, 0.68) !important;
+}
+
+.e_table {
+	height: 13px;
+}
+
+.planning {
+	margin-left: 20px;
+}

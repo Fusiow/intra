@@ -61,6 +61,13 @@ function vote_down(id) {
 	});
 }
 
+function planning(id, color) {
+	$("."+id).animate({backgroundColor: color}, 1000);
+}
+
+function un_planning(id) {
+	$("."+id).animate({backgroundColor: "white"}, 500);
+}
 
 $(document).ready(function (){
 	if (!isEmpty($('.message'))) {

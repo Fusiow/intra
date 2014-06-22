@@ -1,7 +1,3 @@
-<p>This is the main content. To display a lightbox click <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">POPUP</a></p>
-<div id="light" class="white_content">This is the lightbox content. <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><i class='icon-close close'></i></a></div>
-    <div id="fade" class="black_overlay"></div>
-
 <div class='planning'>
 <table class='t_planning'>
 	<tr>
@@ -24,7 +20,7 @@ for ($day = $today['day']; ;) {
 		break ;
 }
 
-$future = date("Y-").date("m-").(date("d") + 6);
+$future = date("Y-")."0".(date("m") + 1).date("-d");
 
 for ($i = 0, $date = date("Y-m-d"); $date <= $future; $i++) {
 	$t_date = explode('-', $date);
@@ -73,43 +69,11 @@ for ($i = 0, $date = date("Y-m-d"); $date <= $future; $i++) {
 }
 ?>
 </table>
+<?php
+	for ($i = 0; isset($sub[$i]); $i++) {
+		echo "<div class='circle' style='background : ".$sub[$i]['subjects']['color']."'></div>";
+		echo "<span class='title'>".$sub[$i]['subjects']['name']."</span>";
+		echo "<br />";
+	}
+?>
 </div>
-</div>
-	<div class='parent'>
-	<div id="corrections" class='panel'>
-		<span class='title'>Corrections</span><br />
-		<br />
-		<span class='sub-title'>Projet Intra <a href="#"><i class='icon-link'></i></a></span><br />
-		<span class='element'>Valentin est <span class='green-style'>connecte</span></span><br />
-		<span class='element'>Ryad est <span class='green-style'>connecte</span></span><br />
-		<span class='element'>Matthieu est <span class='green-style'>connecte</span></span><br />
-		<span class='element'>Vincent est <span class='red-style'>deconnecte</span></span><br />
-		<span class='element'>Louis est <span class='red-style'>au dessus</span></span><br />
-
-	</div>
-
-	<!--
-		News template:
-			<span class='newglob'>
-				<span class='member'>/* Lien vers le profil du membre */</span>
-				<br /> // Retour a la ligne /!\
-				<span class='action'>/* Evenement / Action du membre */</span>
-				<br /> // Retour a la ligne /!\
-			</span>
-	-->
-	<div id="news" class='panel'>
-		<span class='newglob'>
-			<span class='member'><a href="#">Ryad Kharif</a></span>
-			<br />
-			<span class='action'>A encore eu un 0 en Unix</span>
-			<br />
-		</span>
-		<span class='newglob'>
-			<span class='member'><a href="#">Matthieu Maudet</a></span>
-			<br />
-			<span class='action'>N'arrive pas a envoyer des binaires via ft_p</span>
-			<br />
-		</span>
-
-	</div>
-	</div>

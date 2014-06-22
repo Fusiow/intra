@@ -42,6 +42,7 @@ echo $this->Html->css('toggle');
 echo $this->Html->css('subject');
 echo $this->Html->css('dark');
 echo $this->Html->css('ticket');
+echo $this->Html->css('planning');
 echo $this->Html->css('//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
 
 /* Enlever le menu style de la page login */
@@ -58,6 +59,7 @@ echo $this->Html->script('main');
 echo $this->Html->script('showdown');
 echo $this->Html->script('highlight.pack');
 echo $this->Html->script('chart');
+echo $this->Html->script('http://code.jquery.com/color/jquery.color-2.1.2.min.js');
 
 
 echo $this->fetch('meta');
@@ -89,7 +91,7 @@ echo $this->fetch('script');
 				<tr><td onMouseOver="show_sub2('.sub_profile')"><a href='/users/profile/<?= $this->Session->read('LDAP.User.uidnumber') ?>'<i class='icon-user3'></i></td></tr>
 				<tr><td onMouseOver="show_sub2('.sub_module')"><a href='#'><i class='icon-tree'></i></a></td></tr>
 				<tr><td onMouseOver="show_sub2('.sub_forum')"><a href='/forums'><i class='icon-bubbles2'></i></a></td></tr>
-				<tr><td><a href='#'><i class='icon-calendar'></i></a></td></tr>
+				<tr><td><a href='/plannings'><i class='icon-calendar'></i></a></td></tr>
 				<tr><td onMouseOver="show_sub2('.sub_param')"><a href='#'><i class='icon-cog'></i></a></td></tr>
 			</table>
 		</div>

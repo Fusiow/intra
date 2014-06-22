@@ -31,6 +31,7 @@
 		'label' => 'Type :'
 	));
 	echo $this->Form->input('subject_file', array('type' => 'file', 'label' =>'Sujet :'));
+	echo "<input type='color' name='data[subject][color]'>";
 	echo "<br />";
 	echo $this->Form->end('Submit');
 ?>
