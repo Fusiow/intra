@@ -116,7 +116,7 @@ foreach($mods as $mod) {
 ?>
 					</ul>
 				</li>
-				<li onclick="show_sub('.sub_forum')"><i class='icon-bubbles2'></i> Forum <i class='fa fa-chevron-down'></i></li>
+				<li onclick="show_sub('.sub_forum')"><i class='icon-bubbles2'></i><a href='/forums'> Forum</a> <i class='fa fa-chevron-down'></i></li>
 				<li class='sub_menu sub_forum'>
 				<ul>
 					<a href='/forums/add'><li>Nouveau sujet</li></a>
@@ -126,7 +126,7 @@ foreach($mods as $mod) {
 }
 ?>	</ul>
 				</li>
-				<li><i class='icon-calendar'></i> Planning <i class='fa fa-chevron-down'></i></li>
+				<li><i class='icon-calendar'></i><a href='plannings'> Planning </a><i class='fa fa-chevron-down'></i></li>
 <?php
 if (isset($admin)) {
 	echo "<li onclick=\"show_sub('.sub_admin')\"><i class='icon-user4'></i> Admin <i class='fa fa-chevron-down'></i></li>
