@@ -82,7 +82,8 @@ class ShowsController extends AppController {
 			$this->Subject->saveField('is_inscrit', $this->Session->read('LDAP.User.uidnumber'));
 			$this->redirect(array('action' => 'subject', $id));
 		}
-		else if ($is_inscrit == 0) {
+		if ($is_inscrit == 0) {
+			echo "lol";
 			$this->Subject->id = $id;
 			$this->Subject->saveField('is_inscrit', $res[0]['Subject']['is_inscrit'].",".$this->Session->read('LDAP.User.uidnumber'));
 			$this->redirect(array('action' => 'subject', $id));

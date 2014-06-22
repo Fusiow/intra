@@ -10,14 +10,14 @@
 				<?php
 					for ($i = 0; isset($subject[$i]); $i++) {
 						echo "<tr><td class='name'>";
-						echo $subject[$i]['Subject']['name'];
+						echo "<a href='/shows/subject/".$subject[$i]['Subject']['id']."'>".$subject[$i]['Subject']['name']."</a>";
 						echo "</td><td class='description'>";
 						echo $subject[$i]['Subject']['description'];
 						echo "</td><td class='inscrit'>";
 						$inscrit = explode(",", $subject[$i]['Subject']['is_inscrit']);
 						echo count($inscrit);
 						echo "</td><td class='date'>";
-						echo $subject[$i]['Subject']['date_begin'];
+						echo "du: ".$subject[$i]['Subject']['date_begin']." au: ".$subject[$i]['Subject']['date_end'];
 						echo "</td></tr>";
 					}
 				?>
