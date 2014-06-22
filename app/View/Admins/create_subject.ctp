@@ -31,7 +31,19 @@
 		'label' => 'Type :'
 	));
 	echo $this->Form->input('subject_file', array('type' => 'file', 'label' =>'Sujet :'));
-	echo "<input type='color' name='data[subject][color]'>";
 	echo "<br />";
-	echo $this->Form->end('Submit');
 ?>
+<h1>Generer une correction</h1><br />
+<div id="correction_base">
+<?php
+	echo $this->Form->input('corr_title0', array('label' => '', 'placeholder' => 'titre'));
+	echo $this->Form->input('corr_instruc0', array('label' => '', 'placeholder' => 'consigne'));
+	echo $this->Form->input('corr_max0', array('placeholder' => 'Note maximum', 'label' => '', 'type' => 'number'));
+	echo $this->Form->input('corr_min0', array('placeholder' => 'Note min', 'label' => '', 'type' => 'number'));
+
+?>
+</div>
+<div id="result_cor"></div>
+<br />
+<?= $this->Form->end('Submit'); ?>
+<button id="addbar">Ajouter un bareme</button>

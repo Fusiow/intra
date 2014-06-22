@@ -1,6 +1,7 @@
 var		g_isclick = 0;
 var		g_actsub = 0;
 var		g_sub_categ_show = 0;
+var		i = 1;
 
 function isEmpty( el ){
 	return !$.trim(el.html())
@@ -60,13 +61,6 @@ function vote_down(id) {
 	});
 }
 
-function planning(id, color) {
-	$("."+id).animate({backgroundColor: color}, 1000);
-}
-
-function un_planning(id) {
-	$("."+id).animate({backgroundColor: "white"}, 500);
-}
 
 $(document).ready(function (){
 	if (!isEmpty($('.message'))) {
@@ -95,6 +89,12 @@ $(document).ready(function (){
 		$('#result').empty().append(mark);
 		$('#result').val().replace(/\n/g, "<br />");
 		hljs.highlightBlock($('#result pre code')[0], ' ', false);
+	});
+
+	$("#addbar").on('click', function() {
+		data = "<br /><hr /><br /><div class='input text'><input name='data[subject][corr_title"+i+"]' placeholder='titre' type='text'></div><div><input name='data[subject][corr_instruc"+i+"]' placeholder='consigne' type='text' id='correctionCorrInstruc'></div><div class='input number'><label for='correctionCorrMax'></label><input placeholder='Note maximum' name='data[subject][corr_max"+i+"]' type='number'></div><div><input type='number' placeholder='Num min' name='data[subject][corr_min"+i+"]' ></div>";
+		$("#result_cor").append(data);
+		++i;
 	});
 
 	$("#search").on('keyup', function() {
