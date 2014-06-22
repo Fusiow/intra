@@ -89,6 +89,7 @@ class ShowsController extends AppController {
 			}
 		} else {
 			$this->Session->setFlash(__("Vous n'etes pas inscrit au module"));
+			$this->redirect(array('action' => 'inscription_module', 'controller' => 'shows' ,$res[0]['Module']['id']));
 		}
 	}
 }

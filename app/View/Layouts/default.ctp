@@ -179,6 +179,7 @@ foreach ($mods as $mod) {
 	</header>
 	<?php } ?>
 <div id='content'>
+<?php echo $this->Session->flash(); ?>
 	<?= $this->fetch('content') ?>
 </div>
 </body>
