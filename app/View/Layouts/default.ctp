@@ -127,7 +127,7 @@ foreach($mods as $mod) {
 }
 ?>	</ul>
 				</li>
-				<li><i class='icon-calendar'></i><a href='plannings'> Planning </a><i class='fa fa-chevron-down'></i></li>
+				<li><i class='icon-calendar'></i><a href='/plannings'> Planning </a><i class='fa fa-chevron-down'></i></li>
 <?php
 if (isset($admin)) {
 	echo "<li onclick=\"show_sub('.sub_admin')\"><i class='icon-user4'></i> Admin <i class='fa fa-chevron-down'></i></li>
