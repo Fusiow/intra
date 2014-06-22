@@ -83,6 +83,13 @@ $(document).ready(function (){
 		}
 	});
 
+	$("#addbar").on('click', function() {
+		data = "<br /><hr /><br /><div class='input text'><input name='data[subject][corr_title"+i+"]' placeholder='titre' type='text'></div><div><input name='data[subject][corr_instruc"+i+"]' placeholder='consigne' type='text' id='correctionCorrInstruc'></div><div class='input number'><label for='correctionCorrMax'></label><input placeholder='Note maximum' name='data[subject][corr_max"+i+"]' type='number'></div><div><input type='number' placeholder='Num min' name='data[subject][corr_min"+i+"]' ></div>";
+		$("#result_cor").append(data);
+		++i;
+	});
+
+
 	$('.mark').on('keyup', function(){
 		var converter = new Showdown.converter();
 		var mark = converter.makeHtml($('.mark').val());
