@@ -6,53 +6,6 @@
  * class .nope = Aucun projet
  */ 
 
-#planning {
-	width: 90%;
-	height: 180px;
-	text-align: center;
-}
-
-#planning table {
-	border-collapse: collapse;
-	height: 180px;
-	width: 100%;
-}
-
-#planning table tr {
-	width: 100%;
-}
-
-#planning table td {
-	font-size: 2em;
-	font-weight: bold;
-	color: rgba(255, 255, 255, 0.82);
-	transition-property: box-shadow, font-size, color, border-left;
-	transition-duration: 0.2s;
-}
-
-#planning table td:hover {
-	font-size: 2.6em;
-	box-shadow: 10px 10px 5px black;
-	color: white;
-}
-
-#planning .project {
-	background-color: rgba(23, 142, 112, 0.83);
-}
-
-#planning .noinscription {
-	background-color: rgba(255, 0, 0, 0.74);
-}
-
-#planning .nope {
-	background-color: #D6C695;
-}
-
-#planning .today {
-	color: rgba(0, 0, 0, 0.74) !important
-}
-
-/* Correction panel */
 
 #corrections {
 	float: left;
@@ -86,4 +39,16 @@
 	padding-left: 1%;
 	padding-top: 0.5%;
 	width: 100%;
+}
+
+#sujet {
+	border: 1px solid #bfbfbf;
+	margin-right: 3%;
+	margin-left: 3%;
+	padding-left: 2%;
+}
+
+#sujet h2 {
+	border-bottom: 2px solid #bfbfbf;
+	margin-right: 15%;
 }

@@ -41,7 +41,7 @@ class ShowsController extends AppController {
 		$inscrit = explode(',', $res[0]['Module']['is_inscrit']);
 		if ($res[0]['Module']['is_inscrit']) {
 		for ($i = 0; isset($inscrit[$i]); $i++) {
-			if ($inscrit[$i] == $this->Session->read['LDAP.User.uidnumber']) {
+			if ($inscrit[$i] == $this->Session->read('LDAP.User.uidnumber')) {
 				$is_inscrit = 1;
 				break;
 			}
@@ -61,35 +61,37 @@ class ShowsController extends AppController {
 		$res = $this->Module->find('all', array('conditions' => array('id' => $result[0]['Subject']['module_id'])));
 		$is_inscrit = 0;
 		$inscrit = explode(',', $res[0]['Module']['is_inscrit']);
+		print_r($inscrit);
 		for ($i = 0; isset($inscrit[$i]); $i++) {
-			if ($inscrit[$i] == $this->Session->read['LDAP.User.uidnumber'])
-				$is_inscrit = 1; break;
-		}
-
-		if ($is_inscrit == 1) {
-		$res = $this->Subject->find('all', array('conditions' => array('id' => $id)));
-		$inscrit = explode(',', $res[0]['Subject']['is_inscrit']);
-		$is_inscrit  = 0;
-		if ($res[0]['Subject']['is_inscrit']) {
-			for ($i = 0; isset($inscrit[$i]); $i++) {
-				if ($inscrit[$i] == $this->Session->read['LDAP.User.uidnumber']){
-					$is_inscrit = 1;
-					break;
-				}
+			if ($inscrit[$i] == $this->Session->read('LDAP.User.uidnumber')) {
+				$is_inscrit = 1;
+				break;
 			}
-		} else if (!$res[0]['Subject']['is_inscrit']) {
-			$this->Subject->id = $id;
-			$this->Subject->saveField('is_inscrit', $this->Session->read('LDAP.User.uidnumber'));
-			$this->redirect(array('action' => 'subject', $id));
 		}
-		if ($is_inscrit == 0) {
-			echo "lol";
-			$this->Subject->id = $id;
-			$this->Subject->saveField('is_inscrit', $res[0]['Subject']['is_inscrit'].",".$this->Session->read('LDAP.User.uidnumber'));
-			$this->redirect(array('action' => 'subject', $id));
+		if ($is_inscrit == 1) {
+			$res = $this->Subject->find('all', array('conditions' => array('id' => $id)));
+			$inscrit = explode(',', $res[0]['Subject']['is_inscrit']);
+			$is_inscrit  = 0;
+			if ($res[0]['Subject']['is_inscrit']) {
+				for ($i = 0; isset($inscrit[$i]); $i++) {
+					if ($inscrit[$i] == $this->Session->read('LDAP.User.uidnumber')){
+						$is_inscrit = 1;
+						break;
+					}
+				}
+			} if (empty($res[0]['Subject']['is_inscrit'])) {
+				$this->Subject->id = $id;
+				$this->Subject->saveField('is_inscrit', $this->Session->read('LDAP.User.uidnumber'));
+				$this->redirect(array('action' => 'subject', $id));
+			} else if ($is_inscrit == 0) {
+				$this->Subject->id = $id;
+				$this->Subject->saveField('is_inscrit', $res[0]['Subject']['is_inscrit'].",".$this->Session->read('LDAP.User.uidnumber'));
+				$this->redirect(array('action' => 'subject', $id));
+			}
+		} else {
+			echo "Vous n'etes pas inscrit au module";
 		}
 	}
-}
 }
 
 ?>

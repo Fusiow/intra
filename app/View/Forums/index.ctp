@@ -1,5 +1,5 @@
 <div id="forum">
-	<h1>Vos Derniers messages</h1>
+	<h1>Derniers posts</h1>
 		<table class='question'>
 		<tr>
 			<th class='icon'><i class='icon-question'></i> <i style='padding-left: 20%;' class='icon-bubbles2'></i></th>
@@ -9,26 +9,26 @@
 			<th>Subject</th>
 			<th style='text-align: left; padding-left: 7%'>Title</th>
 		</tr>
-		<tr class='space'>
-			<td class='type'><i class='icon-question'></i></td>
-			<td class='answers'>33</td>
-			<td class='views'>64</td>
-			<td class='module'>WEB ||</td>
-			<td class='subject'>Gros Projet Web</td>
-			<td class='title'><span class='text'> Izygg no re</span><span class='author'>Ryoud</span></td>
-		</tr>
-		<tr class='space'>
-			<td class='type'><i class='icon-question'></i></td>
-			<td class='answers'>3</td>
-			<td class='views'>6</td>
-			<td class='module'>General</td>
-			<td class='subject'>Idees</td>
-			<td class='title'><span class='text'> Izy posei TNTC</span><span class='author'>Vince</span></td>
-		</tr>
-
+<?php
+	for ($i = 0; isset($last[$i]); $i++) {
+		echo "<tr class='space'>";
+			echo "<td class='type'>";
+				if ($last[$i]['Forum']['type'] == 2)
+					echo "<i class='icon-question'></i>";
+				else
+					echo "<i class='icon-bubbles2'></i>";
+				echo "</td>";
+				echo "<td class='answers'>".$last[$i]['Forum']['response']."</td>";
+				echo "<td class='views'>".$last[$i]['Forum']['view']."</td>";
+				echo "<td class='module'>".$last[$i]['Forum']['module']."</td>";
+				echo "<td class='subject'>".$last[$i]['Forum']['subject']."</td>";
+				echo "<td class='title'><span class='text'><a href='/forums/subject/".$last[$i]['Forum']['id']."'>".$last[$i]['Forum']['title']."</a></span><span class='author'><a href='/users/profile/".$last[$i]['Forum']['author']."'>".$last[$i]['Forum']['uid_auth']."</a></span></td>";
+			echo "</tr>";
+	}
+?>
 	</table>
 
-	<h1>Last questions</h1>
+	<h1>Vos derniers messages</h1>
 		<table class='question'>
 		<tr>
 			<th class='icon'><i class='icon-question'></i> <i style='padding-left: 20%;' class='icon-bubbles2'></i></th>
@@ -38,22 +38,24 @@
 			<th>Subject</th>
 			<th style='text-align: left; padding-left: 7%'>Title</th>
 		</tr>
-		<tr class='space'>
-			<td class='type'><i class='icon-question'></i></td>
-			<td class='answers'>3</td>
-			<td class='views'>32</td>
-			<td class='module'>Unix I</td>
-			<td class='subject'>42sh</td>
-			<td class='title'><span class='text'> What's my name ?</span><span class='author'>Valentin</span></td>
-		</tr>
-		<tr class='space'>
-			<td class='type'><i class='icon-bubbles2'></i></td>
-			<td class='answers'>1</td>
-			<td class='views'>64</td>
-			<td class='module'>NS</td>
-			<td class='subject'></td>
-			<td class='title'><span class='text'> I don't know</span><span class='author'>Matthieu</span></td>
-		</tr>
+<?php
+	$last = $me;
+	for ($i = 0; isset($last[$i]); $i++) {
+		echo "<tr class='space'>";
+			echo "<td class='type'>";
+				if ($last[$i]['Forum']['type'] == 2)
+					echo "<i class='icon-question'></i>";
+				else
+					echo "<i class='icon-bubbles2'></i>";
+				echo "</td>";
+				echo "<td class='answers'>".$last[$i]['Forum']['response']."</td>";
+				echo "<td class='views'>".$last[$i]['Forum']['view']."</td>";
+				echo "<td class='module'>".$last[$i]['Forum']['module']."</td>";
+				echo "<td class='subject'>".$last[$i]['Forum']['subject']."</td>";
+				echo "<td class='title'><span class='text'><a href='/forums/subject/".$last[$i]['Forum']['id']."'>".$last[$i]['Forum']['title']."</a></span><span class='author'><a href='/users/profile/".$last[$i]['Forum']['author']."'>".$last[$i]['Forum']['uid_auth']."</a></span></td>";
+			echo "</tr>";
+	}
+?>
 
 	</table>
 </div>

@@ -7,7 +7,22 @@ class ForumsController extends AppController {
 	public $uses = array('Subject', 'Forum', 'User', 'Forum_response', 'Module');
 
 	public function		index() {
-
+		$res = $this->Forum->find('all', array('limit' => 5, 'order' => array('id'=> 'DESC')));
+		for ($i = 0; isset($res[$i]); $i++) {
+			$res[$i]['Forum']['module'] = $this->Module->find('all', array('conditions' => array('id' => $res[$i]['Forum']['module'])))[0]['Module']['name'];
+			$res[$i]['Forum']['subject'] = $this->Subject->find('all', array('conditions' => array('id' => $res[$i]['Forum']['subject'])))[0]['Subject']['name'];
+			$res[$i]['Forum']['response'] = count($this->Forum_response->find('all', array('conditions' => array('subject_id' => $res[$i]['Forum']['id']))));
+			$res[$i]['Forum']['uid_auth'] = $this->User->find('all', array('conditions' => array('id' => $res[$i]['Forum']['author'])))[0]['User']['uid'];
+		}
+		$this->set('last', $res);
+		$res = $this->Forum->find('all', array('limit' => '5', 'order' => array('id' => 'DESC') ,'conditions' => array('author' => $this->Session->read('LDAP.User.uidnumber'))));
+		for ($i = 0; isset($res[$i]); $i++) {
+			$res[$i]['Forum']['module'] = $this->Module->find('all', array('conditions' => array('id' => $res[$i]['Forum']['module'])))[0]['Module']['name'];
+			$res[$i]['Forum']['subject'] = $this->Subject->find('all', array('conditions' => array('id' => $res[$i]['Forum']['subject'])))[0]['Subject']['name'];
+			$res[$i]['Forum']['response'] = count($this->Forum_response->find('all', array('conditions' => array('subject_id' => $res[$i]['Forum']['id']))));
+			$res[$i]['Forum']['uid_auth'] = $this->User->find('all', array('conditions' => array('id' => $res[$i]['Forum']['author'])))[0]['User']['uid'];
+		}
+		$this->set('me', $res);
 	}
 
 	public function		show() {

@@ -7,6 +7,10 @@
 		for ($i = 0; isset($module[$i]); $i++) {
 			$credit += $module[$i]['credit'];
 		}
+		for ($i = 0; isset($subject[$i]); $i++) {
+			if (empty($note[$subject[$i]['id']]))
+				$no_note[$subject[$i]] = 1;
+		}
 	?>
 	<div class="picture" >
  		<?php
@@ -88,7 +92,8 @@ Credit en cours: <?= $credit ?><br />
 
 		labels: [<?php
 			for ($i = 0; isset($subject[$i]); $i++) {
-				echo "\"".$subject[$i]['name']."\"";
+				if ($no_note[$subject[$i]['id']] == 1)
+					echo "\"".$subject[$i]['name']."\"";
 				if (isset($subject[$i + 1]))
 					echo ",";
 			}
@@ -101,7 +106,8 @@ Credit en cours: <?= $credit ?><br />
 				pointStrokeColor: "#fff",
 				data: [<?php
 			for ($i = 0; isset($subject[$i]); $i++) {
-				echo "\"".$note[$subject[$i]['id']]['note']['finale_note']."\"";
+				if ($no_note[$subject[$i]['id']] == 1)
+					echo "\"".$note[$subject[$i]['id']]['note']['finale_note']."\"";
 				if (isset($subject[$i + 1]))
 					echo ",";
 			}

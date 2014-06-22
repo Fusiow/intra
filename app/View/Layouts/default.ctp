@@ -67,6 +67,7 @@ echo $this->fetch('meta');
 echo $this->fetch('css');
 echo $this->fetch('script');
 ?>
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 </head>
 <body>
 	<?= $this->Session->flash() ?>

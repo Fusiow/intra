@@ -51,6 +51,8 @@ class PagesController extends AppController {
 		$date = date("Y-m-d");
 		$res = $this->Subject->query("SELECT * FROM subjects WHERE date_begin >= '".$date."'");
 		$this->set('sub', $res);
+		$res = $this->Subject->query("SELECT * FROM subjects WHERE date_begin <= '".$date."' AND date_end >= '".$date."'");
+		$this->set('act_sub', $res);
 		$path = func_get_args();
 
 		$count = count($path);

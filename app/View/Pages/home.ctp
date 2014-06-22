@@ -75,40 +75,27 @@ for ($i = 0, $date = date("Y-m-d"); $date <= $future; $i++) {
 </table>
 </div>
 	<div class='parent'>
-	<div id="corrections" class='panel'>
-		<span class='title'>Corrections</span><br />
-		<br />
-		<span class='sub-title'>Projet Intra <a href="#"><i class='icon-link'></i></a></span><br />
-		<span class='element'>Valentin est <span class='green-style'>connecte</span></span><br />
-		<span class='element'>Ryad est <span class='green-style'>connecte</span></span><br />
-		<span class='element'>Matthieu est <span class='green-style'>connecte</span></span><br />
-		<span class='element'>Vincent est <span class='red-style'>deconnecte</span></span><br />
-		<span class='element'>Louis est <span class='red-style'>au dessus</span></span><br />
-
-	</div>
-
-	<!--
-		News template:
-			<span class='newglob'>
-				<span class='member'>/* Lien vers le profil du membre */</span>
-				<br /> // Retour a la ligne /!\
-				<span class='action'>/* Evenement / Action du membre */</span>
-				<br /> // Retour a la ligne /!\
-			</span>
-	-->
-	<div id="news" class='panel'>
-		<span class='newglob'>
-			<span class='member'><a href="#">Ryad Kharif</a></span>
-			<br />
-			<span class='action'>A encore eu un 0 en Unix</span>
-			<br />
-		</span>
-		<span class='newglob'>
-			<span class='member'><a href="#">Matthieu Maudet</a></span>
-			<br />
-			<span class='action'>N'arrive pas a envoyer des binaires via ft_p</span>
-			<br />
-		</span>
-
-	</div>
+		<div id="sujet">
+			<?php
+				for ($i = 0; isset($act_sub[$i]); $i++) {
+					echo "<h2>".$act_sub[$i]['subjects']['name']." :</h2>";
+					echo "<a href='/shows/subject/".$act_sub[$i]['subjects']['id']."'>Lien vers le sujet</a>";
+					$inscrit = explode(',', $act_sub[$i]['subjects']['is_inscrit']);
+					$is_inscrit = 0;
+					for ($j = 0; isset($inscrit[$j]); $j++) {
+						if ($inscrit[$j] == $this->Session->read('LDAP.User.uidnumber'))
+							$is_inscrit = 1; break;
+					}
+					if ($is_inscrit == 0)
+						echo "<p>N'oubliez pas de vous inscrire !</p>";
+					else if ($is_inscrit == 1)
+						echo "<p>Vous etes bien inscrit</p>";
+					echo "<p>Vous avez jusqu'au ".$act_sub[$i]['subjects']['date_end']." pour rendre votre travail.</p>";
+				echo "<br />";
+				}
+				if ($i == 0) {
+					echo "<h1>Pas de sujet en ce moment</h1>";
+				}
+			?>
+		</div>
 	</div>
