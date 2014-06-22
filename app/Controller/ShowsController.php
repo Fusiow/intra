@@ -61,7 +61,6 @@ class ShowsController extends AppController {
 		$res = $this->Module->find('all', array('conditions' => array('id' => $result[0]['Subject']['module_id'])));
 		$is_inscrit = 0;
 		$inscrit = explode(',', $res[0]['Module']['is_inscrit']);
-		print_r($inscrit);
 		for ($i = 0; isset($inscrit[$i]); $i++) {
 			if ($inscrit[$i] == $this->Session->read('LDAP.User.uidnumber')) {
 				$is_inscrit = 1;
@@ -89,7 +88,7 @@ class ShowsController extends AppController {
 				$this->redirect(array('action' => 'subject', $id));
 			}
 		} else {
-			echo "Vous n'etes pas inscrit au module";
+			$this->Session->setFlash(__("Vous n'etes pas inscrit au module"));
 		}
 	}
 }
